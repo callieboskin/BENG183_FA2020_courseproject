@@ -171,7 +171,7 @@ Thus, we need to correct the p-values and get rid of as many false positive data
 
 There're many ways to perform FDR correction; here we'll be mainly introducing the Benjamini-Hochberg method. If interested in the other method (Benjamini/Yekutieli) and mechanisms behind the FDR correction methods, feel free to navigate to the [wikipedia page for FDR correction](https://en.wikipedia.org/wiki/False_discovery_rate).
 
-In the Benjamini-Hochberg p-value correction method, we correct the p-values to adjusted p-values, and we could reselect the statistically significant data (pathways) based on the corrected p-values.
+In the Benjamini-Hochberg p-value correction method, we correct the p-values to adjusted p-values, and we could reselect the statistically significant data (ontology terms) based on the corrected p-values.
 
 Here is the basic pipeline of performing FDR correction:
 
@@ -182,17 +182,17 @@ Here is the basic pipeline of performing FDR correction:
 
 Rank represents the ranking of the p-value we are working on among all the p-values.
 
-*Note: this is not the final FDR adjusted p-value.*
+*Note: FDRi is not the final FDR adjusted p-value.*
 
 3. Starting from the p-value with second highest ranking and considering original p-values in decreasing (non-increasing) order, we determine the adjusted p-values: for the original p-value of rank *i*, we compare *FDRi* calculated in step (2) with the determined adjusted p-value from the rank *i+1* and pick the smaller value among these two values as the adjusted p-value for rank *i*. 
 
 *Note: for the largest original p-value, we directly use its FDRi as the adjusted p-value*.
 
+<br>
+
 Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values based on the Benjamini-Hochberg method.
 
 ![](./img/fdr_blank_example.png)
-
-<br>
 
 Here we present a short gif to show the calculation process of FDR correction through the Benjamini-Hochberg method.
 

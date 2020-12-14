@@ -22,29 +22,29 @@ There are many strategies to cluster data, all of which depend on what the ultim
 
 **Hierarchical clustering** is one of these methods where the goal is to input a data matrix and output a clustering of groupings that represent similarly expressed data closer within clusters than across other clusters. 
 
-![11andtwoforyoubecausedanthoughtheshouldredo.png](attachment:11andtwoforyoubecausedanthoughtheshouldredo.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/11andtwoforyoubecausedanthoughtheshouldredo.png" width = 1000>
 
 ## 2. Inputs, Outputs, and Variations
 
 **Input**: As mentioned above, typically the input for clustering is given as a distance matrix or set of vectors that represent the expression value or variance amongst the data points.
 
-![3.png](attachment:3.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/3.png" width = 200>
 
 **Output**: The result of clustering should produce a visual representation of the cluster groups which display the closely related data points at shorter distances compared to other data points at larger distances amongst the given set.
 
 **Scatter Plot**: Displays collection of data through a correlation relationship and distance between points representing similarity. Clusters are usually marked by color or dividing lines
 
-![4.png](attachment:4.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/4.png" width = 400>
 
 **Venn Diagram**: Also displays hierarchical clustering illustrating similarity with overlapping points in same plane however similarity is not quantitatively represented
 
-![5.png](attachment:5.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/5.png" width = 300>
 
 **Dendrogram**: A diagram that represents a tree that shows the relationship of the similarity between the input data’s clusters. It usually takes the form of a binary tree where each smaller subset of the data considered compares more specific traits to the identity of the smaller subset. 
 
-![6.png](attachment:6.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/6.png" width = 300>
 
-Variations: 
+#### Variations: 
 
 **Agglomerative**: (bottom up) start with n single clusters and merge the most similar clusters together forming hierarchy, and keep continuing
 
@@ -57,22 +57,22 @@ Agglomerative Hierarchical Clustering Steps:
 2. Merge the points with the smallest distance
 3. Repeat step 2 until only a single cluster is left
 
-![7.png](attachment:7.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/7.png" width = 400>
 
 Decisive Hierarchical Clustering Steps:
 1. Assign all the points to one cluster
 2. Divide the points into two different clusters based upon the largest distance difference
 3. Repeat step 2 until only single points are left
 
-![8.png](attachment:8.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/8.png" width = 400>
 
 ## 4. Algorithm Approaches
 
-![9.png](attachment:9.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/9.png" width = 350>
 
 The goal of hierarchical clustering is simple: to build a tree diagram where the input data that are most similar to each other are placed on branches that are closer together, called a dendrogram. We know how close branches are to one another based on the height of the branch, which represents the amount of dissimilarity between clusters (see image above). The further to the right that the dendrogram the branch splits, the larger the dissimilarity value, meaning the more different the clusters are from one another. Walking through the algorithm step to step, it soon becomes clear that the features that merge into the same cluster sooner are more similar than those that merge later.
 
-![10.png](attachment:10.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/10.png" width = 600>
 
 If one approaches the hierarchical clustering algorithm more vigorously, it soon becomes clear that the distance between the clusters is simply the difference between the chosen similarity metric the data is being evaluated with (which is discussed more in the next section) thus making hierarchical clustering an excellent tool when visualizing the similarities and differences between the data.
 
@@ -92,7 +92,7 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 - Disadvantages: sensitive to outliers
 
 
-![Euclidean.png](attachment:Euclidean.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/Euclidean.png" width = 250>
 
 **Manhattan Distance**: 
 \begin{equation*}
@@ -105,7 +105,7 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 - Disadvantages: expensive in terms of computation
 
 
-![12.png](attachment:12.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/12.png" width = 250>
 
 **Cosine Distance**: 
 \begin{equation*}
@@ -119,7 +119,7 @@ d(A,B) = \frac {A * B}{||A||||B||}
 - Disadvantages: affected by linear transformations
 
 
-![13.png](attachment:13.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/13.png" width = 250>
 
 ## 6. Linkage Methods
 
@@ -135,36 +135,36 @@ Having a clear understanding of what your data looks like visually and what clus
 
 **Centroid method**: utilizes a centroid to group clusterings. A **centroid** is a point that represents the mean value of all the points in the cluster. Once the subclusters are merged, a new centroid must be calculated for the following iteration.
 
-![14.png](attachment:14.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/14.png" width = 250>
 
 **Single linkage**: minimizes the dissimilarity between the two closest points belonging to two different clusters. The two clusters with the lowest dissimilarity  will be merged and the next iteration occurs. 
 
-![15.png](attachment:15.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/15.png" width = 250>
 
 **Complete linkage**: is the same as single linkage except the two farther points’ dissimilarity value is used. 
 
-![16.png](attachment:16.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/16.png" width = 250>
 
 **Average linkage**: calculates the average dissimilarity  between all the points in one cluster and all the points in another cluster. The two clusters with the lowest dissimilarity  average will be merged. 
 
-![17.png](attachment:17.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/17.png" width = 250>
 
 **Ward’s method**: is an agglomerative approach to hierarchical clustering. Rather than using the dissimilarity metric, Ward’s method looks at the variance of possible cluster merging pairs and merges the clusters with the lowest variance. 
 
-![Wards.png](attachment:Wards.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/Wards.png" width = 450>
 
 ## 7. Applications
 
 Hierarchical clustering has many gene expression related applications. Dendrograms are very important in visualizing the similarities and differences between clusters. Below is an example of a complete linkage hierarchical clustering method by Chen et al. [9] used to create a dendrogram showing the relationship between gene expression patterns of various human and mouse brain tissue samples. 
 
-![18_allex.png](attachment:18_allex.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/18_allex.png" width = 800>
 
 As panel a above shows, analogous tissues across species were clustered together as opposed to species clustering together at the most granular level. This method of clustering can be compared with the PCA shown in panel b. Hierarchical clustering appears to perform better with the expected tissue and species results. 
 
 There are also many non-gene expression applications of hierarchical clustering. This method can also be applied to analyzing the online relations between political senators and party affiliation [10]. Looking at the left panel below, it can seem like a daunting task trying to find the relations between the red (Republican), blue (Democratic), and black (independent) senators. 
 
 
-![19_allex.png](attachment:19_allex.png)
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/19_allex.png" width = 800>
 
 After applying hierarchical clustering of the Twitter followings of various U.S. senators, there is a clear split in the clustering pattern between Republicans and Democrats. By taking a deeper look into the meaning behind each branch split, additional political beliefs may be inferred as well. 
 

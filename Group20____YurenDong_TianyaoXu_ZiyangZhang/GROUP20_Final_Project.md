@@ -137,7 +137,7 @@ This gives the p-value we want for the hypergeometric test on the ontology term 
 
 ### Why are we interested in FDR Correction?
 
-In addition to calculating the p-values using hypergeometric test, Metascape also uses the Benjamini-Hochberg p-value correction. [[2]](https://www.nature.com/articles/s41467-019-09234-6) to correct the p-values for the multiple hypothesis burden.
+In addition to calculating the p-values using hypergeometric test, Metascape also uses the Benjamini-Hochberg p-value correction [[2]](https://www.nature.com/articles/s41467-019-09234-6) to correct the p-values for the multiple hypothesis burden.
 
 While performing multiple hypothesis testings, false positive discoveries would be mis-categorized into positive data by the p-value cutoff method conventionally used for identifying statistically significant results. These false positive data are mixed within the true positive data we want, and need to be filtered out.
 
@@ -169,32 +169,36 @@ Thus, we need to correct the p-values and get rid of as many false positive data
 
 ### Benjamini-Hochberg p-value correction
 
-There're many ways to perform FDR correction; here we'll be mainly introducing the Benjamini-Hochberg method. If interested in the other method (Benjamini/Yekutieli) and mechanisms behind the FDR correction methods, feel free to navigate to the [wikipedia page for FDR correction](https://en.wikipedia.org/wiki/False_discovery_rate#Classification_of_multiple_hypothesis_tests).
+There're many ways to perform FDR correction; here we'll be mainly introducing the Benjamini-Hochberg method. If interested in the other method (Benjamini/Yekutieli) and mechanisms behind the FDR correction methods, feel free to navigate to the [wikipedia page for FDR correction](https://en.wikipedia.org/wiki/False_discovery_rate).
 
-In the Benjamini-Hochberg p-value correction method, we correct the p-values to adjusted p-values, and we could reselect the statistically significant data (pathways) based on the corrected p-values.
+In the Benjamini-Hochberg p-value correction method, we correct the p-values to adjusted p-values, and we could reselect the statistically significant data (ontology terms) based on the corrected p-values.
 
 Here is the basic pipeline of performing FDR correction:
 
 1. We would first need to sort our p-values, and we record the rankings of each p-value.
 
-2. We compute adjusted values of the p-values following the equation below:
+2. We compute the "scaled" p-values following the equation below:
 ![](./img/fdr_formula.png)
 
-FDR represents the adjusted p-value.
-rank represents the ranking of the p-value working on.
+Rank represents the ranking of the p-value we are working on among all the p-values.
 
-3. Starting from the p-value with second highest ranking, we compare the adjusted value with the corrected p-value from the higher rank. (Note that for the p-value with highest ranking, we directly use the adjusted value as corrected p-value.)
+*Note: FDRi is not the final FDR adjusted p-value.*
 
-Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values based on the Benjamini-Hochberg method.
+3. Starting from the p-value with second highest ranking and considering original p-values in decreasing (non-increasing) order, we determine the adjusted p-values: for the original p-value of rank *i*, we compare *FDRi* calculated in step (2) with the determined adjusted p-value from the rank *i+1* and pick the smaller value among these two values as the adjusted p-value for rank *i*. 
+
+*Note: for the largest original p-value, we directly use its FDRi as the adjusted p-value*.
+
+<br>
+
+Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values basing on the Benjamini-Hochberg method.
 
 ![](./img/fdr_blank_example.png)
-
 
 Here we present a short gif to show the calculation process of FDR correction through the Benjamini-Hochberg method.
 
 ![](./img/fdr_example_cropped.gif)
 
-Notice that for GO Pathway VI: the adjusted value (0.945) is greater than the corrected p-value from 1 ranking higher (from Pathway VII, 0.91), thus we would let corrected p-value of Pathway VI be 0.91.
+Notice that for GO Pathway VI: the *FDRi* value (0.945) is greater than the adjusted p-value from 1 ranking higher (from Pathway VII, 0.91), thus we would let adjusted p-value of Pathway VI be 0.91.
 
 Conventionally we use FDR corrected p-value < 0.05 as the way to select statistically significant p-values, while eliminating a bunch of false positives. In the example of 7 pathways, we would select Pathway I as the target of downstream analysis.
 

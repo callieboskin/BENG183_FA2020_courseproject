@@ -190,7 +190,7 @@ Rank represents the ranking of the p-value we are working on among all the p-val
 
 <br>
 
-Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values based on the Benjamini-Hochberg method.
+Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values basing on the Benjamini-Hochberg method.
 
 ![](./img/fdr_blank_example.png)
 

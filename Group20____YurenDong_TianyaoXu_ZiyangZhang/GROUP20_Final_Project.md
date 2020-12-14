@@ -186,18 +186,19 @@ Rank represents the ranking of the p-value we are working on among all the p-val
 
 3. Starting from the p-value with second highest ranking and considering original p-values in decreasing (non-increasing) order, we determine the adjusted p-values: for the original p-value of rank *i*, we compare *FDRi* calculated in step (2) with the determined adjusted p-value from the rank *i+1* and pick the smaller value among these two values as the adjusted p-value for rank *i*. 
 
-*Note: for the p-value with highest ranking (the largest), we directly use the FDRi as the adjusted p-value*.
+*Note: for the largest original p-value, we directly use its FDRi as the adjusted p-value*.
 
 Let's take the above 7 GO pathways as an example. We have the p-values from preliminary studies (hypergeometric testing), and now we want to adjust the p-values based on the Benjamini-Hochberg method.
 
 ![](./img/fdr_blank_example.png)
 
+<br>
 
 Here we present a short gif to show the calculation process of FDR correction through the Benjamini-Hochberg method.
 
 ![](./img/fdr_example_cropped.gif)
 
-Notice that for GO Pathway VI: the adjusted value (0.945) is greater than the corrected p-value from 1 ranking higher (from Pathway VII, 0.91), thus we would let corrected p-value of Pathway VI be 0.91.
+Notice that for GO Pathway VI: the *FDRi* value (0.945) is greater than the adjusted p-value from 1 ranking higher (from Pathway VII, 0.91), thus we would let adjusted p-value of Pathway VI be 0.91.
 
 Conventionally we use FDR corrected p-value < 0.05 as the way to select statistically significant p-values, while eliminating a bunch of false positives. In the example of 7 pathways, we would select Pathway I as the target of downstream analysis.
 

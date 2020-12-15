@@ -149,15 +149,17 @@ When comparing 2 strings, we simply proceed to the first character position that
 | 13    | 5              | GCATTACCGT            |
 | 14    | 2              | GCTGCATTACCGT         |
 
-The **Suffix Array** is ready to handle string search tasks 
+The sorted **Suffix Array** is now ready to handle string search tasks 
+
+Since the array is in sorted order, we can now use **binary search** to quickly navigate to the position of query string in the array. The principle behind binary search is that the query is compared to the middle element of a sorted array to eliminate half of the search range -- If the search element is larger than the middle element, the first half of the array will be dropped, and smaller, the second half dropped. 
 
 Below is an example of searching string CGT in the genome with **binary search** in SA
 
 ![alt](https://github.com/wel268/BENG183_FA2020_courseproject/blob/main/Group18____Parker%20C%C3%B4t%C3%A9_Julia%20Jones_Weishan%20Li/BinarySearch.gif?raw=true)
 
-Using binary search, we are able to reduce the range we need to search to half after each string to string comparison. 
+By the property of **binary search**, with each string to string comparison of query against the middle suffix, we reduce our search range by half, and thus in the worst case we need **O(Log(N))** of string to string comparisons to reduce the search range to 1, at which point we can easily determine whether the query is found or not. 
 
-Thus we may accomplish any search task in **O(Log(N)M)** comparisons, where M is the string size and N is the genome size
+In each string comparison we do at most as many single character comparisons as the length of our query string. Thus we may accomplish any search task in **O(Log(N)M)** single-char comparisons, where M is the string size and N is the genome size
 
 ---
 
@@ -175,7 +177,20 @@ Thus we may accomplish any search task in **O(Log(N)M)** comparisons, where M is
 
 ### Running STAR 
 
-TODO
+**Generate genome indices**
+
+As you learned in the Suffix Array section, to do any alignment with Suffix Array we must first generate the index array. The below command in STAR does so:
+
+```
+STAR           
+```
+
+`--runThreadN` number of threads 
+`--runMode` genomeGenerate mode
+`--genomeDir` /path/to/store/genome_indices
+`--genomeFastaFiles` /DS/reference/Drosophila_melanogaster.BDGP6.22.dna.toplevel.fa 
+`--sjdbGTFfile` /DS/reference/Drosophila_melanogaster.BDGP6.22.97.chr.gtf 
+`--sjdbOverhang` 100 #reads length minus 1 
 
 ---
 ### Sources

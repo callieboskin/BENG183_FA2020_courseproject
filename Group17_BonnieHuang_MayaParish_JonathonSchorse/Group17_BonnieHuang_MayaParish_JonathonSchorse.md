@@ -8,7 +8,6 @@ RNA-RNA interactions are a vital part of cell processes including transcription,
 
 An estimated 85% or more of the human genome is believed to be encoded into RNA. Yet, much of the function of the human genome is unknown. Currently, only about 10% of the human genome is well-annotated, with the remaining 90% yet to be fully understood<sup>4</sup>. In order to better understand RNA-RNA interactions and thus the human genome itself, we must have efficient methods for detecting these interactions. 
 
-<p>&nbsp;</p>
 <div align="center"><img src="./Group17_images/figure1.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 1 : Types of RNA involved in the RNA interactome include: mRNA, tRNA, miRNA, long intergenic noncoding RNA (lincRNA), small nucleolar RNA (snoRNA), small nuclear RNA, transposon RNA, pseudogene RNA, and antisense RNA<sup>5</sup>. </span></div>.
@@ -83,8 +82,9 @@ Finally, use reverse transcription to convert our RNA into cDNA, which then allo
 <div align="center"><img src="./Group17_images/mario_step8.png" /></div>
 <div align="center"><img src="./Group17_images/mario_step9.png" /></div>
 
-**Overview of MARIO**
+
 <p>&nbsp;</p>
+**Overview of MARIO Steps**
 
 <div align="center"><img src="./Group17_images/figure2.png" /></div>
 

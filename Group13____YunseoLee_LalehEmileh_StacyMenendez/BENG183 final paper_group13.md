@@ -36,7 +36,7 @@ A well designed clustering algorithm can provide an easy to understand
 tree construct for the reader to draw quick and straightforward
 conclusions when it comes to cluster analysis.
 
-###### Applications in Biological Sciences
+#### Applications in Biological Sciences
 
 Hierarchical clustering is a useful technique when we are working with
 biological data. We can group genes with similar expressions into
@@ -52,7 +52,7 @@ techniques along with hierarchical clustering often results in better
 classification of data as we need to reduce the amount of noise and
 number of outliers.
 
-###### Algorithm
+#### Algorithm
 
 There are **two types of basic clustering algorithms** to build our tree
 structure and they are exactly reverse of each other. We can use a

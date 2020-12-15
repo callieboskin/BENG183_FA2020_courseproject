@@ -9,4 +9,4 @@ GroupID____name1_name2_name3.
 
 Tutorial for git and markdown writing please refer to piazza final paper post.
 
-![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = &#451)
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)

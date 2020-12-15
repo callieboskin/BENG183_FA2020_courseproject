@@ -118,7 +118,7 @@ method**. It is a distance that is the length of a line between two
 points within a euclidean space. It can be calculated using the
 cartesian coordinates and applying it to the Pythagorean distance
 formula. As a result, this will give us the magnitude of the two points.
-The euclidean distance is calculated as: ![formula](https://render.githubusercontent.com/render/math?math=d(p,q) = √((p_1-q〖_1〗)^2+(p_2-q_2 )^2+ ...(p_n-q_n )^2 )).
+The euclidean distance is calculated as: ![formula](https://render.githubusercontent.com/render/math?math='').
 \[[*5*](https://en.wikipedia.org/wiki/Euclidean_distance)\]
 
 ![](img/image2.png)
@@ -402,7 +402,7 @@ Clustering?” *Displayr*,
 
 **\[12\] Patlolla, Chaitanya Reddy. “Understanding the Concept of
 Hierarchical Clustering Technique.” *Medium*, 10 Dec. 2018,
-[*towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec.*](http://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec.)**
+[*towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec*](http://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec)**
 
 **\[13\] Pandya, Sharnil, and Saket J Swarndeep . “An Overview of
 Partitioning Algorithms in Clustering Techniques.” International Journal

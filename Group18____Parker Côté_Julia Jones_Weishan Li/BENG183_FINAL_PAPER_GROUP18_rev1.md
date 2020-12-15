@@ -53,13 +53,19 @@ When the input is millions of short reads and whole genomes, however, linear tim
 Some aligners before STAR use the **split-read** approach. The read sequences are first split into smaller fragments, either based on prior knowledge of the junction site or certain preliminary continuous alignment result, and then individually aligned. The **mapping error** issue can arise from either incomplete annotation of the target transcriptome, biasing the alignment towards the known exons over the unknown ones. 
 
 
+#### What is an example of some alignment tool that is actually practical? 
 
----
+After discussing how the naïve approach is terrible, it is time that we should talk about an example of alignment tool that is actually used in the industry. 
 
+**BLAST**, or the **(Basic Local Alignment Search Tool)**, is probably "the most widely bioinformatics tool every written". [^1] It is typically used to align a query of protein sequence to some transcriptome database, and has the capacity to handle alignment between protein sequences and DNA sequences given a transcription frame. 
 
+The algorithm behind **BLAST** is the **Aho-Corasick Automaton**, a dictionary-matching algorithm that locates a collection of patterns (queries) in the reference text (database of DNA or protein sequence). The algorithm uses the "trie" data structure to align multiple patterns within linear search time with respect to the database size.  
 
+In a nutshell, the Aho-Corasick algorithm transforms the set of patterns to a trie, where characters of patterns serve as paths that connects one node to another. The reference is run against the trie, and whenever the reference text contains a pattern of interest, that specific permutation of characters "navigates" itself to a destination node that signifies the algorithm of a match. 
 
+The explanation is in itself abstract and hard to understand, but hopefully the below example of searching amino acid patterns *ql, zl, ln, lb, nf* in database *qlnfs*, visualization credit [^8] , illustrates the concept better.  
 
+![](https://github.com/wel268/BENG183_FA2020_courseproject/blob/main/Group18____Parker%20C%C3%B4t%C3%A9_Julia%20Jones_Weishan%20Li/ACT.gif?raw=true)
 
 
 ---

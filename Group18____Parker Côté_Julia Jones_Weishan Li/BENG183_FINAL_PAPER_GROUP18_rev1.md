@@ -12,7 +12,7 @@ The sheer size of the read libraries and the non-continuous nature of RNA-Seq re
 Modern computers are fast, with billions of transistors switching on and off at a rate of several gigahertz. However, the computation power we have is easily dwarfed by the size of input we wish to analyze. Given the length of genomes, even algorithms running in polynomial runtime can take an impractical time to execute.   
 
 #### How bad is the Naïve approach?
-The naïve string search algorithm is simple. The query string is slide over the reference text and char-by-char comparisons are made after each slide. [^5]
+The naïve string search algorithm is simple. The query string is slide over the reference text and char-by-char comparisons are made after each slide. [^5^]
 
 
 
@@ -213,4 +213,5 @@ STAR
 5. [https://www.geeksforgeeks.org/naive-algorithm-for-pattern-searching/?ref=lbp](https://www.geeksforgeeks.org/naive-algorithm-for-pattern-searching/?ref=lbp)
 6. [https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/?ref=lbp](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/?ref=lbp)
 7. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4863231/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4863231/)
+8. [http://jovilab.sinaapp.com/visualization/algorithms/strings/aho-corasick](http://jovilab.sinaapp.com/visualization/algorithms/strings/aho-corasick)
 

@@ -1,6 +1,5 @@
-##### Final Presentation Paper
 
-## Hierarchical Clustering
+# Hierarchical Clustering
 
 ###### Group 13:  Yunseo Lee, Laleh Emileh, Stacy Menendez
 

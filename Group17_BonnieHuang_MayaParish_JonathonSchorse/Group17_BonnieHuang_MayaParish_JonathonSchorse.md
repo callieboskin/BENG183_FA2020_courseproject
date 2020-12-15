@@ -13,7 +13,6 @@ An estimated 85% or more of the human genome is believed to be encoded into RNA.
 <div align="center"><span style="color:gray">Figure 1 : Types of RNA involved in the RNA interactome include: mRNA, tRNA, miRNA, long intergenic noncoding RNA (lincRNA), small nucleolar RNA (snoRNA), small nuclear RNA, transposon RNA, pseudogene RNA, and antisense RNA<sup>5</sup>. </span></div>.
 
 
-
 ## What is MARIO?
 
 MARIO (Mapping RNA Interactome in Vivo) is a high throughput method performed *in vivo* used to study RNA-RNA interactions <sup>4</sup>. 

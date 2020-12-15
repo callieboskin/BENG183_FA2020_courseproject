@@ -82,7 +82,7 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 
 **Euclidean Distance**: 
 
-<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/EuclideanDistance.png" width = 250>
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/EuclideanDistance.PNG" width = 250>
 
 - Most common method 
 - Measures similarity by calculating distance between two points
@@ -95,7 +95,7 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 
 **Manhattan Distance**: 
 
-<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/ManhattanDistance.png" width = 250>
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/ManhattanDistance.PNG" width = 250>
 
 - Typically used when there is high dimensionality and a grid like pattern of data
 - Ex. when calculating distance on a game board or map 
@@ -107,7 +107,7 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 
 **Cosine Distance**: 
 
-<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/CosineDistance.png" width = 200>
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/CosineDistance.PNG" width = 200>
 
 - Preferred in collaborative filtering, finding similarity between vectors  
 - Ex. user similarity amongst apps such as movie/music recommendation for similar parties/clusters 

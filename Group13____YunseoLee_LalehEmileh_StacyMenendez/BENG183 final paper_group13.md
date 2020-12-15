@@ -118,7 +118,7 @@ method**. It is a distance that is the length of a line between two
 points within a euclidean space. It can be calculated using the
 cartesian coordinates and applying it to the Pythagorean distance
 formula. As a result, this will give us the magnitude of the two points.
-The euclidean distance is calculated as: \( d(p,q) = √((p_1-q〖_1〗)^2+(p_2-q_2 )^2+ ...(p_n-q_n )^2 ) \) .
+The euclidean distance is calculated as: <img src="https://render.githubusercontent.com/render/math?math=d(p,q) = √((p_1-q〖_1〗)^2+(p_2-q_2 )^2+ ...(p_n-q_n )^2 ) ">  .
 \[[*5*](https://en.wikipedia.org/wiki/Euclidean_distance)\]
 
 ![](img/image2.png)

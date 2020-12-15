@@ -250,58 +250,58 @@ or type invertebrate.
 **Advantages
 \[[*11*](http://www.displayr.com/strengths-weaknesses-hierarchical-clustering.)\]**
 
--   Technique that is the easiest to understand and learn how to use.
+*   Technique that is the easiest to understand and learn how to use.
 
--   Several ways to calculate linkage, which includes: Unweighted Pair
+*   Several ways to calculate linkage, which includes: Unweighted Pair
     > Group Method (UPGMA), Single-Linkage, Complete-Linkage,
     > Centroid-Linkage, Ward’s Linkage and Average-Linkage.
 
--   Its main output, the dendrogram, offers a unique way to understand
+*   Its main output, the dendrogram, offers a unique way to understand
     > an overall snapshot of the cluster groups found in your data.
 
--   There is no need to assume any particular number of clusters, since
+*   There is no need to assume any particular number of clusters, since
     > the desired number of clusters can be obtained by ‘cutting’ the
     > dendrogram at the proper level.
 
--   Clusters may correspond to meaningful taxonomies (i.e. Disease vs.
+*   Clusters may correspond to meaningful taxonomies (i.e. Disease vs.
     > No Disease).
 
 **Limitations
 \[[*12*](http://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec.)\]**
 
--   Hierarchical clustering requires high space and time complexity.
+*  Hierarchical clustering requires high space and time complexity.
     > Thus, making it impossible to calculate using very large
     > data inputs.
 
--   There is no specific mathematical approach or objective for
+*  There is no specific mathematical approach or objective for
     > Hierarchical clustering.
 
--   All the approaches to calculate the similarity between clusters have
+*  All the approaches to calculate the similarity between clusters have
     > its own disadvantages.
 
--   Clustering multidimensional data cannot always be visualized on a
+*  Clustering multidimensional data cannot always be visualized on a
     > 2D plot. This makes it difficult to spot and resolve solutions.
 
--   Possibility of misinterpreting the dendrogram if given a
+*  Possibility of misinterpreting the dendrogram if given a
     > large dataset. Thus, making it troublesome to determine the
     > accurate number of clusters.
 
--   Since most of the software that is used for this algorithm does not
+*  Since most of the software that is used for this algorithm does not
     > work with missing data, the program won’t be able to run at all.
 
--   When using many complex different data types, it becomes difficult
+*  When using many complex different data types, it becomes difficult
     > to compute a distance matrix. There is no simple formula that can
     > work with both qualitative and numerical data at the same time.
 
--   Once a decision has been made to combine two clusters, it cannot
+*   Once a decision has been made to combine two clusters, it cannot
     > be undone.
 
--   Time complexity of at least O(*n^2^ log n*) is required, where *‘n’*
+*  Time complexity of at least O(*n^2^ log n*) is required, where *‘n’*
     > is the number of data points.
 
--   Sensitivity to noise and outliers.
+*   Sensitivity to noise and outliers.
 
--   Difficulty handling different sized clusters and convex shapes.
+*  Difficulty handling different sized clusters and convex shapes.
 
 #### Hierarchical Clustering versus Other Clustering Techniques
 

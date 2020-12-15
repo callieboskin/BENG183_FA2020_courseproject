@@ -218,7 +218,7 @@ In conclusion, *k*-means clustering is a powerful machine learning tool used to 
 9. [“So You Have Some Clusters, Now What?” Square Corner Blog, 9 Nov. 2017. ](developer.squareup.com/blog/so-you-have-some-clusters-now-what/) 
 10. [Oyelade, Jelili et al. “Clustering Algorithms: Their Application to Gene Expression Data.” Bioinformatics and biology insights vol. 10 237-253. 30 Nov. 2016, doi:10.4137/BBI.S38316](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5135122/)
 11. [Dembélé D, Kastner P. Fuzzy C-means method for clustering microarray data. Bioinformatics. 2003 May 22;19(8):973-80. doi: 10.1093/bioinformatics/btg119. PMID: 12761060.](https://pubmed.ncbi.nlm.nih.gov/12761060/) 
-12. [“Elbow Method” Elbow Method - Yellowbrick v1.2 Documentation] (www.scikit-yb.org/en/latest/api/cluster/elbow.html)
+12. [“Elbow Method” Elbow Method - Yellowbrick v1.2 Documentation](www.scikit-yb.org/en/latest/api/cluster/elbow.html)
 
 
 ---

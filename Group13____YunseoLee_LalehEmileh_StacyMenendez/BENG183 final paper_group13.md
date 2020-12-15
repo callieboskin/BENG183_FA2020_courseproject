@@ -90,8 +90,8 @@ distance between each data point.
 
 > ![](img/image11.png)
 
-  Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions \[4\]
-  --------------------------------------------------------------------------------------------------------------------------
+  Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions [4]()
+___
 
 After calculating the N x N similarity matrix, where N is the number of
 data points (N=10 in figure1), the algorithm iteratively merges in the
@@ -371,52 +371,52 @@ with the best result in some cases.
 
 References
 
-\[1\] Cai, Ruichu, et al. “A General Framework of Hierarchical
+**\[1\] Cai, Ruichu, et al. “A General Framework of Hierarchical
 Clustering and Its Applications.” *Information Sciences*, Elsevier, 20
 Feb. 2014,
-[*www.sciencedirect.com/science/article/abs/pii/S0020025514001686*](http://www.sciencedirect.com/science/article/abs/pii/S0020025514001686).
+[*www.sciencedirect.com/science/article/abs/pii/S0020025514001686*](http://www.sciencedirect.com/science/article/abs/pii/S0020025514001686).**
 
-\[2\] Zahoránszky, L., Katona, G., Hári, P., Málnási-Csizmadia, A.,
+**\[2\] Zahoránszky, L., Katona, G., Hári, P., Málnási-Csizmadia, A.,
 Zweig, K. and Zahoránszky-Köhalmi, G., 2020. *Breaking The Hierarchy - A
 New Cluster Selection Mechanism For Hierarchical Clustering Methods*.
-[*https://almob.biomedcentral.com/articles/10.1186/1748-7188-4-12*](https://almob.biomedcentral.com/articles/10.1186/1748-7188-4-12)
+[*https://almob.biomedcentral.com/articles/10.1186/1748-7188-4-12*](https://almob.biomedcentral.com/articles/10.1186/1748-7188-4-12)**
 
-\[3\] Manning, C. D., Raghavan, P., & Schutze, H. 2008. *Introduction to
+**\[3\] Manning, C. D., Raghavan, P., & Schutze, H. 2008. *Introduction to
 Information Retrieval*. Cambridge, England: Cambridge University Press.
-[*https://nlp.stanford.edu/IR-book/pdf/17hier.pdf*](https://nlp.stanford.edu/IR-book/pdf/17hier.pdf)
+[*https://nlp.stanford.edu/IR-book/pdf/17hier.pdf*](https://nlp.stanford.edu/IR-book/pdf/17hier.pdf)**
 
-\[4\] Augen, Jeff. Bioinformatics and Transcription, “Informit.”
+**\[4\] Augen, Jeff. Bioinformatics and Transcription, “Informit.”
 *InformIT March 2005* , web www.informit.com /article 357695.
-[*https://www.informit.com/articles/article.aspx?p=357695&seqNum=4\#:\~:text=Hierarchical%20clustering%2C%20the%20most%20frequently,as%20a%20dendrogram%20%5B%2C%5D.*](https://www.informit.com/articles/article.aspx?p=357695&seqNum=4#:~:text=Hierarchical%20clustering%2C%20the%20most%20frequently,as%20a%20dendrogram%20%5B%2C%5D.)
+[*https://www.informit.com/articles/article.aspx?p=357695&seqNum=4\#:\~:text=Hierarchical%20clustering%2C%20the%20most%20frequently,as%20a%20dendrogram%20%5B%2C%5D.*](https://www.informit.com/articles/article.aspx?p=357695&seqNum=4#:~:text=Hierarchical%20clustering%2C%20the%20most%20frequently,as%20a%20dendrogram%20%5B%2C%5D.)**
 
-\[3\] “Euclidean Distance.” *Wikipedia*, Wikimedia Foundation, 11 Dec.
-2020, en.wikipedia.org/wiki/Euclidean\_distance.
+**\[3\] “Euclidean Distance.” *Wikipedia*, Wikimedia Foundation, 11 Dec.
+2020, en.wikipedia.org/wiki/Euclidean\_distance.**
 
-\[4\] “Hierarchical Clustering.” *Solver*, 7 Feb. 2016,
-[*www.solver.com/xlminer/help/hierarchical-clustering-intro*](http://www.solver.com/xlminer/help/hierarchical-clustering-intro).
+**\[4\] “Hierarchical Clustering.” *Solver*, 7 Feb. 2016,
+[*www.solver.com/xlminer/help/hierarchical-clustering-intro*](http://www.solver.com/xlminer/help/hierarchical-clustering-intro).**
 
-\[5\] “Manhattan Distance.” *Manhattan Distance - an Overview |
+**\[5\] “Manhattan Distance.” *Manhattan Distance - an Overview |
 ScienceDirect Topics*,
-[*www.sciencedirect.com/topics/mathematics/manhattan-distance*](http://www.sciencedirect.com/topics/mathematics/manhattan-distance).
+[*www.sciencedirect.com/topics/mathematics/manhattan-distance*](http://www.sciencedirect.com/topics/mathematics/manhattan-distance).**
 
-\[6\] Prabhakaran, Selva. “Cosine Similarity - Understanding the Math
+**\[6\] Prabhakaran, Selva. “Cosine Similarity - Understanding the Math
 and How It Works? (with Python).” *ML+*, 11 Oct. 2020,
-[*www.machinelearningplus.com/nlp/cosine-similarity/*](http://www.machinelearningplus.com/nlp/cosine-similarity/).
+[*www.machinelearningplus.com/nlp/cosine-similarity/*](http://www.machinelearningplus.com/nlp/cosine-similarity/).**
 
-\[7\] *Single-Link, Complete-Link & Average-Link Clustering*,
-nlp.stanford.edu/IR-book/completelink.html.
+**\[7\] *Single-Link, Complete-Link & Average-Link Clustering*,
+nlp.stanford.edu/IR-book/completelink.html.**
 
-\[8\] Pandya, Sharnil, and Saket J Swarndeep . “An Overview of
+**\[8\] Pandya, Sharnil, and Saket J Swarndeep . “An Overview of
 Partitioning Algorithms in Clustering Techniques.” International Journal
 of Advanced Research in Computer Engineering &amp; Technology (IJARCET),
 June 2016,
-ijarcet.org/wp-content/uploads/IJARCET-VOL-5-ISSUE-6-1943-1946.pdf.
+ijarcet.org/wp-content/uploads/IJARCET-VOL-5-ISSUE-6-1943-1946.pdf.**
 
-\[9\] Givoni, Inmar E., et al. “Hierarchical Affinity Propagation.”
+**\[9\] Givoni, Inmar E., et al. “Hierarchical Affinity Propagation.”
 Probabilistic and Statistical Inference Group University of Toronto,
-arxiv.org/pdf/1202.3722.pdf.
+arxiv.org/pdf/1202.3722.pdf.**
 
-\[10\] McInnes, Leland, et al. “Comparing Python Clustering
+**\[10\] McInnes, Leland, et al. “Comparing Python Clustering
 Algorithms¶.” Comparing Python Clustering Algorithms - Hdbscan 0.8.1
 Documentation, 2016,
-hdbscan.readthedocs.io/en/latest/comparing\_clustering\_algorithms.html.
+hdbscan.readthedocs.io/en/latest/comparing\_clustering\_algorithms.html.**

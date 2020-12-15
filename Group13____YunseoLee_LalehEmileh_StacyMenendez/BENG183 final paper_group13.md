@@ -6,7 +6,7 @@
 
 ###### Fall 2020
 
-**Overview**
+### Overview
 
 Hierarchical clustering is a clustering technique that allows us to
 build tree structures by grouping similar clusters based on their
@@ -36,7 +36,7 @@ A well designed clustering algorithm can provide an easy to understand
 tree construct for the reader to draw quick and straightforward
 conclusions when it comes to cluster analysis.
 
-#### Applications in Biological Sciences
+### Applications in Biological Sciences
 
 Hierarchical clustering is a useful technique when we are working with
 biological data. We can group genes with similar expressions into
@@ -52,7 +52,7 @@ techniques along with hierarchical clustering often results in better
 classification of data as we need to reduce the amount of noise and
 number of outliers.
 
-#### Algorithm
+### Algorithm
 
 There are **two types of basic clustering algorithms** to build our tree
 structure and they are exactly reverse of each other. We can use a
@@ -105,7 +105,7 @@ for merging or dividing different clusters will have an impact on the
 outcome of our algorithm as well as, our interpretation of data - as it
 may introduce noise or outliers.
 
-#### Distance Measures
+### Distance Measures
 
 There are several different ways to calculate the **measure of
 distance**, but for now we will focus on the most common methods - such
@@ -149,7 +149,7 @@ Therefore, it is more applicable to the real world.
 
 ![](img/image4.png)
 
-#### Linkage Methods In Hierarchical Clustering
+### Linkage Methods In Hierarchical Clustering
 
 In the beginning, we explained both agglomerative and divisive
 hierarchical clustering. Within the agglomerative approach, there are
@@ -229,7 +229,7 @@ log n). Therefore, overall time complexity is O($n^{2}$ log n).
 
 As a result, it is seen that they all have very poor time complexities.
 
-#### Illustrative Example
+### Illustrative Example
 
 ![](img/image7.png)
 
@@ -243,7 +243,7 @@ as animals. Thus, creating two separate branches. From there, each of
 them have specified animals that correlate with being of type vertebrate
 or type invertebrate.
 
-#### Limitations and Advantages of Hierarchical Clustering Technique
+### Limitations and Advantages of Hierarchical Clustering Technique
 
 ![](img/image8.gif)
 
@@ -252,58 +252,40 @@ or type invertebrate.
 
 *   Technique that is the easiest to understand and learn how to use.
 
-*   Several ways to calculate linkage, which includes: Unweighted Pair
-    > Group Method (UPGMA), Single-Linkage, Complete-Linkage,
-    > Centroid-Linkage, Ward’s Linkage and Average-Linkage.
+*   Several ways to calculate linkage, which includes: Unweighted Pair Group Method (UPGMA), Single-Linkage, Complete-Linkage,  Centroid-Linkage, Ward’s Linkage and Average-Linkage.
 
-*   Its main output, the dendrogram, offers a unique way to understand
-    > an overall snapshot of the cluster groups found in your data.
+*   Its main output, the dendrogram, offers a unique way to understand  an overall snapshot of the cluster groups found in your data.
 
-*   There is no need to assume any particular number of clusters, since
-    > the desired number of clusters can be obtained by ‘cutting’ the
-    > dendrogram at the proper level.
+*   There is no need to assume any particular number of clusters, since the desired number of clusters can be obtained by ‘cutting’ the dendrogram at the proper level.
 
-*   Clusters may correspond to meaningful taxonomies (i.e. Disease vs.
-    > No Disease).
+*   Clusters may correspond to meaningful taxonomies (i.e. Disease vs. No Disease).
 
 **Limitations
 \[[*12*](http://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec.)\]**
 
-*  Hierarchical clustering requires high space and time complexity.
-    > Thus, making it impossible to calculate using very large
-    > data inputs.
+*  Hierarchical clustering requires high space and time complexity. Thus, making it impossible to calculate using very large data inputs.
 
-*  There is no specific mathematical approach or objective for
-    > Hierarchical clustering.
+*  There is no specific mathematical approach or objective for Hierarchical clustering.
 
-*  All the approaches to calculate the similarity between clusters have
-    > its own disadvantages.
+*  All the approaches to calculate the similarity between clusters have its own disadvantages.
 
-*  Clustering multidimensional data cannot always be visualized on a
-    > 2D plot. This makes it difficult to spot and resolve solutions.
+*  Clustering multidimensional data cannot always be visualized on a 2D plot. This makes it difficult to spot and resolve solutions.
 
-*  Possibility of misinterpreting the dendrogram if given a
-    > large dataset. Thus, making it troublesome to determine the
-    > accurate number of clusters.
+*  Possibility of misinterpreting the dendrogram if given a large dataset. Thus, making it troublesome to determine the accurate number of clusters.
 
-*  Since most of the software that is used for this algorithm does not
-    > work with missing data, the program won’t be able to run at all.
+*  Since most of the software that is used for this algorithm does not work with missing data, the program won’t be able to run at all.
 
-*  When using many complex different data types, it becomes difficult
-    > to compute a distance matrix. There is no simple formula that can
-    > work with both qualitative and numerical data at the same time.
+*  When using many complex different data types, it becomes difficult to compute a distance matrix. There is no simple formula that can  work with both qualitative and numerical data at the same time.
 
-*   Once a decision has been made to combine two clusters, it cannot
-    > be undone.
+*   Once a decision has been made to combine two clusters, it cannot  be undone.
 
-*  Time complexity of at least O(*n^2^ log n*) is required, where *‘n’*
-    > is the number of data points.
+*  Time complexity of at least O(*n^2^ log n*) is required, where *‘n’*  is the number of data points.
 
 *   Sensitivity to noise and outliers.
 
 *  Difficulty handling different sized clusters and convex shapes.
 
-#### Hierarchical Clustering versus Other Clustering Techniques
+### Hierarchical Clustering versus Other Clustering Techniques
 
 **K-Means Clustering**
 
@@ -356,7 +338,7 @@ in comparison to that of Hierarchical Clustering.
 
 ![](img/image12.gif)
 
-#### Summary
+### Summary
 
 Machine Learning tools have overall helped us understand more on the
 emerging research issue in data mining due its variety of applications.
@@ -375,7 +357,7 @@ see few of the many disadvantages that come with using it. Overall, this
 algorithm gives us a very easy way to implement data and provides us
 with the best result in some cases.
 
-#### References
+### References
 
 **\[1\] Cai, Ruichu, et al. “A General Framework of Hierarchical
 Clustering and Its Applications.” *Information Sciences*, Elsevier, 20
@@ -410,7 +392,6 @@ and How It Works? (with Python).” *ML+*, 11 Oct. 2020,
 [*www.machinelearningplus.com/nlp/cosine-similarity/*](http://www.machinelearningplus.com/nlp/cosine-similarity/).**
 
 **\[9\] *Single-Link, Complete-Link & Average-Link Clustering*,
-
 [*nlp.stanford.edu/IR-book/completelink.html.*](http://nlp.stanford.edu/IR-book/completelink.html.)**
 
 **\[10\]“Hierarchical Clustering.” *Solver*, 7 Feb. 2016,

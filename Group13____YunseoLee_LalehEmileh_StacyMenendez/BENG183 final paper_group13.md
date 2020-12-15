@@ -88,9 +88,9 @@ Each data point is a three dimensional vector showing expression levels.
 Merging similar sequences requires us to calculate the geometric
 distance between each data point.
 
-> ![Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions \[4\]](img/image11.png)
+> ![](img/image11.png)
 
-  
+  Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions \[4\]
   --------------------------------------------------------------------------------------------------------------------------
 
 After calculating the N x N similarity matrix, where N is the number of

@@ -1,12 +1,12 @@
-###### Final Presentation Paper
+##### Final Presentation Paper
 
 ## Hierarchical Clustering
 
-###### Yunseo Lee, Laleh Emileh, Stacy Menendez
+##### Yunseo Lee, Laleh Emileh, Stacy Menendez
 
-###### Fall 2020
+##### Fall 2020
 
-### Overview
+## Overview
 
 Hierarchical clustering is a clustering technique that allows us to
 build tree structures by grouping similar clusters based on their
@@ -36,7 +36,7 @@ A well designed clustering algorithm can provide an easy to understand
 tree construct for the reader to draw quick and straightforward
 conclusions when it comes to cluster analysis.
 
-### Applications in Biological Sciences
+## Applications in Biological Sciences
 
 Hierarchical clustering is a useful technique when we are working with
 biological data. We can group genes with similar expressions into
@@ -52,7 +52,7 @@ techniques along with hierarchical clustering often results in better
 classification of data as we need to reduce the amount of noise and
 number of outliers.
 
-### Algorithm
+## Algorithm
 
 There are **two types of basic clustering algorithms** to build our tree
 structure and they are exactly reverse of each other. We can use a
@@ -105,7 +105,7 @@ for merging or dividing different clusters will have an impact on the
 outcome of our algorithm as well as, our interpretation of data - as it
 may introduce noise or outliers.
 
-### Distance Measures
+## Distance Measures
 
 There are several different ways to calculate the **measure of
 distance**, but for now we will focus on the most common methods - such
@@ -149,7 +149,7 @@ Therefore, it is more applicable to the real world.
 
 ![](img/image4.png)
 
-### Linkage Methods In Hierarchical Clustering
+## Linkage Methods In Hierarchical Clustering
 
 In the beginning, we explained both agglomerative and divisive
 hierarchical clustering. Within the agglomerative approach, there are
@@ -229,7 +229,7 @@ log n). Therefore, overall time complexity is O($n^{2}$ log n).
 
 As a result, it is seen that they all have very poor time complexities.
 
-### Illustrative Example
+## Illustrative Example
 
 ![](img/image7.png)
 
@@ -243,7 +243,7 @@ as animals. Thus, creating two separate branches. From there, each of
 them have specified animals that correlate with being of type vertebrate
 or type invertebrate.
 
-### Limitations and Advantages of Hierarchical Clustering Technique
+## Limitations and Advantages of Hierarchical Clustering Technique
 
 ![](img/image8.gif)
 
@@ -285,7 +285,7 @@ or type invertebrate.
 
 *  Difficulty handling different sized clusters and convex shapes.
 
-### Hierarchical Clustering versus Other Clustering Techniques
+## Hierarchical Clustering versus Other Clustering Techniques
 
 **K-Means Clustering**
 
@@ -338,7 +338,7 @@ in comparison to that of Hierarchical Clustering.
 
 ![](img/image12.gif)
 
-### Summary
+## Summary
 
 Machine Learning tools have overall helped us understand more on the
 emerging research issue in data mining due its variety of applications.
@@ -357,7 +357,7 @@ see few of the many disadvantages that come with using it. Overall, this
 algorithm gives us a very easy way to implement data and provides us
 with the best result in some cases.
 
-### References
+## References
 
 **\[1\] Cai, Ruichu, et al. “A General Framework of Hierarchical
 Clustering and Its Applications.” *Information Sciences*, Elsevier, 20

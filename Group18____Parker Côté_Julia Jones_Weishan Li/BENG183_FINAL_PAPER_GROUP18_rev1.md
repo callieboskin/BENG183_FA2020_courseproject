@@ -19,22 +19,22 @@ The naïve string search algorithm is simple. The query string is slide over the
 This approach works quite well for inputs of small size, but careful inspection of it execution reveals lot of unnecessary work. For instance: Try aligning AAAB to reference AAAAAAAAAA
 
 ```
-1-1	⌄			1-2  ⌄			1-3	  ⌄			1-4	   ⌄		
+1-1	⌄		1-2      ⌄		1-3	  ⌄		1-4	   ⌄		
 	AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA
 	AAAB			AAAB			AAAB			AAAB
-	⌃				 ⌃				  ⌃				   ⌃				  		
+	⌃		         ⌃		          ⌃		           ⌃				  		
 
-2-1	 ⌄			2-2   ⌄			2-3	   ⌄		2-4	    ⌄		
+2-1	 ⌄		2-2       ⌄		2-3	   ⌄		2-4	    ⌄		
 	AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA
 	 AAAB			 AAAB			 AAAB			 AAAB
-	 ⌃				  ⌃				   ⌃				⌃			
+	 ⌃			  ⌃		           ⌃	                    ⌃			
 
 ...
 
-7-1	      ⌄		7-2        ⌄	7-3	        ⌄	7-4	         ⌄		
+7-1	      ⌄		7-2            ⌄	7-3	        ⌄	7-4	         ⌄		
 	AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA		AAAAAAAAAA
-	      AAAB		      AAAB			  AAAB			  AAAB
-	      ⌃				   ⌃				⌃				 ⌃
+	      AAAB		      AAAB		      AAAB		      AAAB
+	      ⌃			       ⌃		        ⌃		         ⌃
 ```
 Notice that the algorithm repeatedly compares the first 3 "A"s in the query to the reference, only to arrive at the last "B" and realize the alignment at the current position fails. Eventually, the program will terminate after 28 total single-char comparisons.
 

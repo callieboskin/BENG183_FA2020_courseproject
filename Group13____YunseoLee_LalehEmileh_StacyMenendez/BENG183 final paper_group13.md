@@ -88,7 +88,7 @@ Each data point is a three dimensional vector showing expression levels.
 Merging similar sequences requires us to calculate the geometric
 distance between each data point.
 
-> ![](media/image11.png){width="3.5308169291338585in"
+> ![](img/image11.png){width="3.5308169291338585in"
 > height="3.142924321959755in"}
 
   Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions \[4\]

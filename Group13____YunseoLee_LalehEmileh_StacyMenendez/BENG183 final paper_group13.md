@@ -264,7 +264,7 @@ or type invertebrate.
 
 *   Once a decision has been made to combine two clusters, it cannot  be undone.
 
-*  Time complexity of at least O(*n^2^ log n*) is required, where *‘n’*  is the number of data points.
+*  Time complexity of at least O(*n^2 log n*) is required, where *‘n’*  is the number of data points.
 
 *   Sensitivity to noise and outliers.
 
@@ -377,10 +377,10 @@ and How It Works? (with Python).” *ML+*, 11 Oct. 2020,
 [*www.machinelearningplus.com/nlp/cosine-similarity/*](http://www.machinelearningplus.com/nlp/cosine-similarity/).**
 
 **\[9\] *Single-Link, Complete-Link & Average-Link Clustering*,
-[*nlp.stanford.edu/IR-book/completelink.html.*](http://nlp.stanford.edu/IR-book/completelink.html.)**
+[*nlp.stanford.edu/IR-book/completelink.html.*](http://nlp.stanford.edu/IR-book/completelink.html)**
 
 **\[10\]“Hierarchical Clustering.” *Solver*, 7 Feb. 2016,
-[*www.solver.com/xlminer/help/hierarchical-clustering-intro.*](http://www.solver.com/xlminer/help/hierarchical-clustering-intro.)**
+[*www.solver.com/xlminer/help/hierarchical-clustering-intro.*](http://www.solver.com/xlminer/help/hierarchical-clustering-intro)**
 
 **\[11\] Bock, Tim. “What Are the Strengths and Weaknesses of Hierarchical
 Clustering?” *Displayr*,

@@ -1,27 +1,28 @@
-## MARIO (Mapping RNA Interactome in Vivo)
+# MARIO (Mapping RNA Interactome in Vivo)
 
 *Group 17: Bonnie Huang, Maya Parish, Jonathon Schorse*
 
-### The Importance of RNA-RNA Interactions
+## The Importance of RNA-RNA Interactions
 
 RNA-RNA interactions are a vital part of cell processes including transcription, translation, and regulation of proteins. One of the most famous examples of RNA-RNA interactions is that of mRNA and tRNA during translation. During protein synthesis, tRNA molecules bring amino acids to a growing amino acid chain, while mRNA transcripts act as blueprints<sup>1</sup>. Another important example of RNA-RNA interactions are miRNA-mRNA interactions. The miRNAs can bind to mRNA and either degrade the mRNA or inhibit translation, playing an important role in protein regulation<sup>2</sup>. RNA-RNA interactions are also important for RNA splicing. Splicing occurs when introns are removed from the initial RNA, and the exons are joined together to form the mature RNA (mRNA). This process is catalyzed by small nuclear ribonucleoproteins (snRNPs), which are RNA-protein complexes that bind to the introns to be spliced out<sup>3</sup>. These are just a few examples of important RNA-RNA interactions in cells and there are likely many more of which are still undiscovered. 
 
 An estimated 85% or more of the human genome is believed to be encoded into RNA. Yet, much of the function of the human genome is unknown. Currently, only about 10% of the human genome is well-annotated, with the remaining 90% yet to be fully understood<sup>4</sup>. In order to better understand RNA-RNA interactions and thus the human genome itself, we must have efficient methods for detecting these interactions. 
 
+<p>&nbsp;</p>
 <div align="center"><img src="./Group17_images/figure1.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 1 : Types of RNA involved in the RNA interactome include: mRNA, tRNA, miRNA, long intergenic noncoding RNA (lincRNA), small nucleolar RNA (snoRNA), small nuclear RNA, transposon RNA, pseudogene RNA, and antisense RNA<sup>5</sup>. </span></div>.
 
 
 
-### What is MARIO?
+## What is MARIO?
 
 MARIO (Mapping RNA Interactome in Vivo) is a high throughput method performed *in vivo* used to study RNA-RNA interactions <sup>4</sup>. 
 
 Unlike other methods of mapping RNA-RNA interactions, MARIO examines the entire RNA interactome and does not require specific RNA-binding proteins. Older methods of mapping RNA-RNA interactions, such PAR-CLIP and HITS-CLIP, are inefficient because they are unable to study the entire RNA-RNA interactome. This is because they do not assay RNA-RNA interactions directly and instead only examine RNAs that are connected to specific RNA-binding proteins. In contrast, MARIO maps the entire RNA-RNA interactome instead of relying on a single anchoring RNA or protein. Another important advantage of MARIO compared to other RNA-RNA interaction interrogation methods is that it does not require any molecular perturbations, keeping the RNA and proteins closer to their natural state<sup>4</sup>.
 
 
-### MARIO Step-by-Step
+## MARIO Step-by-Step
 
 The following are the steps involved MARIO<sup>4</sup>:
 
@@ -83,12 +84,13 @@ Finally, use reverse transcription to convert our RNA into cDNA, which then allo
 <div align="center"><img src="./Group17_images/mario_step9.png" /></div>
 
 **Overview of MARIO**
+<p>&nbsp;</p>
 
 <div align="center"><img src="./Group17_images/figure2.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 2 : Overview of all the steps in the MARIO method<sup>4</sup></span></div>
 
-### MARIO Output & Analysis
+## MARIO Output & Analysis
 
 Performing an alignment from the sequencing data allows us to visualize which parts of the genome the interacting RNA was transcribed from. MARIO tools is a package that is designed specifically for analysis of MARIO pair-end sequencing data<sup>4</sup>. 
 
@@ -97,6 +99,8 @@ Figure 3 gives an example output of the paired-end sequencing data from MARIO <s
 <div align="center"><img src="./Group17_images/figure3.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 3 : MARIO paired-end sequencing data<sup>4</sup></span></div>
+
+<p>&nbsp;</p>
 
 Finally, figure 4a shows the results from the application of MARIO assays on two independent mouse embryonic stem cells in order to infer the RNA–RNA interactome in mouse embryonic stem cells <sup>4</sup>. The graph on the left shows that tens of thousands of RNA-RNA interactions were identified, and mRNA–snoRNA interactions were the most abundant type. snoRNAs are RNA molecules that guide chemical modifications of other RNAs such as ribosomal RNAs and transfer RNAs. Other common RNA-RNA interactions identified included mRNA–mRNA, mRNA-tRNA, snoRNA-snoRNA, snoRNA-tRNA, and pseudogeneRNA–mRNA interactions. 
 

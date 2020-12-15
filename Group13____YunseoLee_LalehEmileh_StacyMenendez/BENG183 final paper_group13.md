@@ -1,12 +1,12 @@
-Final Presentation Paper
+#### Final Presentation Paper
 
-Hierarchical Clustering
+# Hierarchical Clustering
 
-Yunseo Lee, Laleh Emileh, Stacy Menendez
+#### Yunseo Lee, Laleh Emileh, Stacy Menendez
 
-Fall 2020
+#### Fall 2020
 
-Overview
+**Overview**
 
 Hierarchical clustering is a clustering technique that allows us to
 build tree structures by grouping similar clusters based on their

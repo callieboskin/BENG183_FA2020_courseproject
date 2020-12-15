@@ -169,8 +169,7 @@ merge the two clusters that are the farthest elements in the plot. On
 the other hand, in **single-linkage**, we merge the two clusters that
 are closest elements from the plot. Mathematically, the complete linkage
 function 
- ![](img/latex/image3.png) and 
- ![](img/latex/image4.png)
+ ![](img/latex/image3.png) and single linkage function — the distance D(X,Y) = min d(x,y) Where, d(x,y) is the distance between  ![](img/latex/image9.png) and X and Y are two sets of clusters.
 \[[*6*](https://en.wikipedia.org/wiki/Complete-linkage_clustering)\]
 
 ![](img/image5.png)

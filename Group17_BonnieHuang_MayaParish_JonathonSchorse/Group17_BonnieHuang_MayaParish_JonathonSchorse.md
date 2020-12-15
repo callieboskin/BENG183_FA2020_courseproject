@@ -46,7 +46,7 @@ Adding biotin to our sample allows us to use a streptavidin bead to stabilize th
 
 <div align="center"><img src="./Group17_images/mario_step3.png" /></div>
 
-**Step 4 - Introduce RNA Linker**
+**Step 4 - Introduce RNA linker**
 
 Next, introduce an RNA linker which also contains biotin. In addition, add ligase to the sample to connect this linker to the 5’ end of RNA molecules.
 
@@ -114,13 +114,13 @@ Figure 4b shows that there are few RNAs with a high number of interactions and t
 
 
 ## References:
-Ribosomes, Transcription, and Translation. Nature News. https://www.nature.com/scitable/topicpage/ribosomes-transcription-and-translation-14120660/. Accessed December 15, 2020. 
+[1] Ribosomes, Transcription, and Translation. Nature News. https://www.nature.com/scitable/topicpage/ribosomes-transcription-and-translation-14120660/. Accessed December 15, 2020. 
 
-Ambros V. The functions of animal microRNAs. Nature. 2004;431(7006):350-355. doi:10.1038/nature02871
+[2] Ambros V. The functions of animal microRNAs. Nature. 2004;431(7006):350-355. doi:10.1038/nature02871
 
-Clancy, S. (2008) RNA splicing: introns, exons and spliceosome. Nature Education 1(1):31
+[3] Clancy, S. (2008) RNA splicing: introns, exons and spliceosome. Nature Education 1(1):31
 
-Nguyen TC, Cao X, Yu P, et al. Mapping RNA–RNA interactome and RNA structure in vivo by MARIO. Nat Commun. 2016;7(1):12023. doi:10.1038/ncomms12023
+[4] Nguyen TC, Cao X, Yu P, et al. Mapping RNA–RNA interactome and RNA structure in vivo by MARIO. Nat Commun. 2016;7(1):12023. doi:10.1038/ncomms12023
 
-Chan C, Pham P, Dedon PC, Begley TJ. Lifestyle modifications: coordinating the tRNA epitranscriptome with codon bias to adapt translation during stress responses. Genome Biol. 2018;19(1):228. doi:10.1186/s13059-018-1611-1
+[5] Chan C, Pham P, Dedon PC, Begley TJ. Lifestyle modifications: coordinating the tRNA epitranscriptome with codon bias to adapt translation during stress responses. Genome Biol. 2018;19(1):228. doi:10.1186/s13059-018-1611-1
 

@@ -8,7 +8,7 @@ RNA-RNA interactions are a vital part of cell processes including transcription,
 
 An estimated 85% or more of the human genome is believed to be encoded into RNA. Yet, much of the function of the human genome is unknown. Currently, only about 10% of the human genome is well-annotated, with the remaining 90% yet to be fully understood<sup>4</sup>. In order to better understand RNA-RNA interactions and thus the human genome itself, we must have efficient methods for detecting these interactions. 
 
-<div style="text-align:center"><img src="./Group17_images/figure1.png" /></div>
+<div align="center"><img src="./Group17_images/figure1.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 1 : Types of RNA involved in the RNA interactome include: mRNA, tRNA, miRNA, long intergenic noncoding RNA (lincRNA), small nucleolar RNA (snoRNA), small nuclear RNA, transposon RNA, pseudogene RNA, and antisense RNA<sup>5</sup>. </span></div>.
 
@@ -29,7 +29,7 @@ The following are the steps involved MARIO<sup>4</sup>:
 
 The first step is to crosslink the sample using a combination of chemicals and ultraviolet irradiation. Crosslinking preserves RNA-RNA and RNA-protein interactions, and prevents them from coming undone during subsequent steps of MARIO.
 
-<div style="text-align:center"><img src="./Group17_images/mario_step1.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step1.png" /></div>
 
 **Step 2 - Wash and biotin**
 
@@ -37,20 +37,20 @@ The next step is to perform a strong wash to remove loosely interacting and non-
 
 Interacting RNA often features mediating proteins or proteins complexes. In addition to the wash, also add biotin to these interacting complexes. 
 
-<div style="text-align:center"><img src="./Group17_images/mario_step2.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step2.png" /></div>
 
 
 **Step 3 - Collect samples on bead**
 
 Adding biotin to our sample allows us to use a streptavidin bead to stabilize the interacting materials.
 
-<div style="text-align:center"><img src="./Group17_images/mario_step3.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step3.png" /></div>
 
 **Step 4 - Introduce RNA Linker**
 
 Next, introduce an RNA linker which also contains biotin. In addition, add ligase to the sample to connect this linker to the 5’ end of RNA molecules.
 
-<div style="text-align:center"><img src="./Group17_images/mario_step4.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step4.png" /></div>
 
 **Step 5 - Connect interacting RNA with linker**
 
@@ -58,13 +58,13 @@ Next, perform ligation once more, to connect the introduced linker to the 3' end
 
 At this point, interacting RNA molecules will be connected by a linker in the middle, allowing us to purify our sample in the next few steps by filtering out molecules missing the linker in the middle. 
 
-<div style="text-align:center"><img src="./Group17_images/mario_step5.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step5.png" /></div>
 
 **Step 6 - Digest linkers at end of RNA**
 
 In this step, perform purification by introducing exonucleases that digest linkers at the ends of RNA molecules. Linkers in the middle of two RNA molecules will be protected from this particular nuclease and will not be digested. 
 
-<div style="text-align:center"><img src="./Group17_images/mario_step6.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step6.png" /></div>
 
 **Step 7 - Collect interacting RNA with bead**
 
@@ -72,19 +72,19 @@ At this point, interacting RNA molecules should have a linker containing biotin 
 
 Select for only RNA which has the linker using a streptavidin bead to bind to the biotin once again. This gets rid of all the RNA which did not form interactions with other RNA. 
 
-<div style="text-align:center"><img src="./Group17_images/mario_step7.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step7.png" /></div>
 
 **Step 8 - Reverse transcription and sequencing**
 
 Finally, use reverse transcription to convert our RNA into cDNA, which then allows us to sequence our sample. 
 
 
-<div style="text-align:center"><img src="./Group17_images/mario_step8.png" /></div>
-<div style="text-align:center"><img src="./Group17_images/mario_step9.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step8.png" /></div>
+<div align="center"><img src="./Group17_images/mario_step9.png" /></div>
 
 **Overview of MARIO**
 
-<div style="text-align:center"><img src="./Group17_images/figure2.png" /></div>
+<div align="center"><img src="./Group17_images/figure2.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 2 : Overview of all the steps in the MARIO method<sup>4</sup></span></div>
 
@@ -94,7 +94,7 @@ Performing an alignment from the sequencing data allows us to visualize which pa
 
 Figure 3 gives an example output of the paired-end sequencing data from MARIO <sup>4</sup>. Each line is a sequence representing a pair of RNAs. Overall, this data suggests Taf1d, which is a snoRNA, interacts with Trim25, which is the 3’ UTR of a messenger RNA. The blue reads on top are from one biological replicate and the purple reads on the bottom are from another. Reads from both biological replicates support the interaction between Taf1d and Trim25.
 
-<div style="text-align:center"><img src="./Group17_images/figure3.png" /></div>
+<div align="center"><img src="./Group17_images/figure3.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 3 : MARIO paired-end sequencing data<sup>4</sup></span></div>
 
@@ -103,7 +103,7 @@ Finally, figure 4a shows the results from the application of MARIO assays on two
 Figure 4b shows that there are few RNAs with a high number of interactions and that most RNAs have relatively fewer interactions <sup>4</sup>. In other words, there are way more RNAs with specific targets than those with a greater number of targets. This makes sense because for example, there are exponentially more miRNAs that target specific mRNAs than miRNAs that target a large number of mRNAs. 
 
 
-<div style="text-align:center"><img src="./Group17_images/figure4.png" /></div>
+<div align="center"><img src="./Group17_images/figure4.png" /></div>
 
 <div align="center"><span style="color:gray">Figure 4 : Results from application of MARIO to mouse embryonic stem cells<sup>4</sup></span></div>
 

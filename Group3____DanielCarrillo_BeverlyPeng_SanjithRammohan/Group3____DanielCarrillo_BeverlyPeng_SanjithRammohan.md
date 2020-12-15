@@ -81,9 +81,8 @@ If one approaches the hierarchical clustering algorithm more vigorously, it soon
 Similarity between the new clusters formed and all remaining clusters can be calculated with various clustering methods:
 
 **Euclidean Distance**: 
-\begin{equation*}
-  d(A,B) = \sqrt {\left( {X_a - X_b } \right)^2 + \left( {Y_a - Y_b } \right)^2 }
-\end{equation*}
+
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/EuclideanDistance.png" width = 250>
 
 - Most common method 
 - Measures similarity by calculating distance between two points
@@ -95,29 +94,26 @@ Similarity between the new clusters formed and all remaining clusters can be cal
 <img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/Euclidean.png" width = 250>
 
 **Manhattan Distance**: 
-\begin{equation*}
-  d(A,B) = |X_a-X_b|+|Y_a-Y_b|
-\end{equation*}
+
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/ManhattanDistance.png" width = 250>
+
 - Typically used when there is high dimensionality and a grid like pattern of data
 - Ex. when calculating distance on a game board or map 
 - Runtime: O(3n)
 - Advantages: used to detect outliers, or higher planes
 - Disadvantages: expensive in terms of computation
 
-
 <img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/12.png" width = 250>
 
 **Cosine Distance**: 
-\begin{equation*}
-d(A,B) = \frac {A * B}{||A||||B||}
-\end{equation*}
+
+<img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/CosineDistance.png" width = 200>
 
 - Preferred in collaborative filtering, finding similarity between vectors  
 - Ex. user similarity amongst apps such as movie/music recommendation for similar parties/clusters 
 - Runtime: O(3n)
 - Advantages: independent of vector length, unaffected by rotation
 - Disadvantages: affected by linear transformations
-
 
 <img src="../Group3____DanielCarrillo_BeverlyPeng_SanjithRammohan/13.png" width = 250>
 

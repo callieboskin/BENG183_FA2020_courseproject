@@ -23,7 +23,7 @@ Unlike other methods of mapping RNA-RNA interactions, MARIO examines the entire 
 
 ## MARIO Step-by-Step
 
-The following are the steps involved MARIO<sup>4</sup>:
+The following are the steps involved in MARIO<sup>4</sup>:
 
 **Step 1 - Crosslinking**
 
@@ -42,7 +42,7 @@ Interacting RNA often features mediating proteins or proteins complexes. In addi
 
 **Step 3 - Collect samples on bead**
 
-Adding biotin to our sample allows us to use a streptavidin bead to stabilize the interacting materials.
+Adding biotin to our sample allows us to use streptavidin beads to stabilize the interacting materials.
 
 <div align="center"><img src="./Group17_images/mario_step3.png" /></div>
 
@@ -56,13 +56,13 @@ Next, introduce an RNA linker which also contains biotin. In addition, add ligas
 
 Next, perform ligation once more, to connect the introduced linker to the 3' end of RNA molecules. 
 
-At this point, interacting RNA molecules will be connected by a linker in the middle, allowing us to purify our sample in the next few steps by filtering out molecules missing the linker in the middle. 
+At this point, interacting RNA molecules will be connected by a linker in the middle, allowing us to purify the sample in the next few steps by filtering out molecules missing the linker in the middle. 
 
 <div align="center"><img src="./Group17_images/mario_step5.png" /></div>
 
 **Step 6 - Digest linkers at end of RNA**
 
-In this step, perform purification by introducing exonucleases that digest linkers at the ends of RNA molecules. Linkers in the middle of two RNA molecules will be protected from this particular nuclease and will not be digested. 
+In this step, perform purification by introducing exonucleases that digest linkers at the ends of RNA molecules. Linkers in the middle of two RNA molecules will be protected from these particular nucleases and will not be digested. 
 
 <div align="center"><img src="./Group17_images/mario_step6.png" /></div>
 
@@ -70,13 +70,13 @@ In this step, perform purification by introducing exonucleases that digest linke
 
 At this point, interacting RNA molecules should have a linker containing biotin connecting them together, while non-interacting RNAs should have no such linkers. 
 
-Select for only RNA which has the linker using a streptavidin bead to bind to the biotin once again. This gets rid of all the RNA which did not form interactions with other RNA. 
+Select for only RNA which has the linker using streptavidin beads to bind to the biotin once again. This gets rid of all the RNA which did not form interactions with other RNA. 
 
 <div align="center"><img src="./Group17_images/mario_step7.png" /></div>
 
 **Step 8 - Reverse transcription and sequencing**
 
-Finally, use reverse transcription to convert our RNA into cDNA, which then allows us to sequence our sample. 
+Finally, use reverse transcription to convert the RNA into cDNA, which then allows us to sequence our sample. 
 
 
 <div align="center"><img src="./Group17_images/mario_step8.png" /></div>
@@ -89,11 +89,11 @@ Finally, use reverse transcription to convert our RNA into cDNA, which then allo
 
 <div align="center"><img src="./Group17_images/figure2.png" /></div>
 
-<div align="center"><span style="color:gray">Figure 2 : Overview of all the steps in the MARIO method<sup>4</sup></span></div>
+<div align="center"><span style="color:gray">Figure 2 : Overview of all the steps in the MARIO method: 1)Crosslinking, 2)Wash & biotin, 3)Stabilize samples on bead, 4)Introduce linker, 5)Ligate linker, 6)Digest linkers at ends of RNA molecules, 7)Purify RNA with bead, 8)Reverse transcription, 9)Sequencing<sup>4</sup></span></div>
 
 ## MARIO Output & Analysis
 
-Performing an alignment from the sequencing data allows us to visualize which parts of the genome the interacting RNA was transcribed from. MARIO tools is a package that is designed specifically for analysis of MARIO pair-end sequencing data<sup>4</sup>. 
+Performing an alignment from the sequencing data allows us to visualize which parts of the genome the interacting RNA was transcribed from. MARIO tools is a package that is designed specifically for analysis of MARIO paired-end sequencing data<sup>4</sup>. 
 
 Figure 3 gives an example output of the paired-end sequencing data from MARIO <sup>4</sup>. Each line is a sequence representing a pair of RNAs. Overall, this data suggests Taf1d, which is a snoRNA, interacts with Trim25, which is the 3’ UTR of a messenger RNA. The blue reads on top are from one biological replicate and the purple reads on the bottom are from another. Reads from both biological replicates support the interaction between Taf1d and Trim25.
 

@@ -88,7 +88,7 @@ Each data point is a three dimensional vector showing expression levels.
 Merging similar sequences requires us to calculate the geometric
 distance between each data point.
 
-> ![](img/image9.png)
+> ![](img/image1.png)
   Figure 1: Different gene expressions among ten genes in three different experiments visualized in three dimensions \[4\]
   ___
 
@@ -121,7 +121,7 @@ formula. As a result, this will give us the magnitude of the two points.
 The euclidean distance is calculated as: $d(p,q)\  = \ $ .
 \[[*5*](https://en.wikipedia.org/wiki/Euclidean_distance)\]
 
-![](img/image12.png)
+![](img/image2.png)
 
 **Manhattan distance**
 
@@ -133,7 +133,7 @@ of absolute differences. The Manhattan distance is calculated as p~1~ at
 y~2~)$\  = \ |X_{1} - Y_{2}| + \ ... + |X_{1} - Y_{2}|$.
 \[[*7*](https://www.sciencedirect.com/topics/mathematics/manhattan-distance#:~:text=The%20Manhattan%20distance%20between%20two,the%20%E2%80%9Ctaxi%20cab%E2%80%9D%20metric.)\]
 
-![](img/image10.png)
+![](img/image3.png)
 
 **Cosine Similarity**
 
@@ -147,7 +147,7 @@ higher the similarity.
 \[[*8*](https://www.machinelearningplus.com/nlp/cosine-similarity/)\]
 Therefore, it is more applicable to the real world.
 
-![](img/image7.png)
+![](img/image4.png)
 
 #### Linkage Methods In Hierarchical Clustering
 
@@ -176,7 +176,7 @@ $d(x,y)\ $is the distance between $x \in \ X,\ y\  \in \text{\ Y}$and X
 and Y are two sets of clusters.
 \[[*6*](https://en.wikipedia.org/wiki/Complete-linkage_clustering)\]
 
-![](img/image8.png)
+![](img/image5.png)
 
 **Average-Linkage**
 
@@ -190,7 +190,7 @@ merged and formed into new clusters within the average pairwise distance
 and so on.
 \[[*10*](https://www.solver.com/xlminer/help/hierarchical-clustering-intro)\]
 
-![](img/image11.png)
+![](img/image6.png)
 
 **Understanding the Time Complexity of Linkage**
 
@@ -231,7 +231,7 @@ As a result, it is seen that they all have very poor time complexities.
 
 #### Illustrative Example
 
-![](img/image4.png)
+![](img/image7.png)
 
 Using hierarchical clustering, we are able to **create a tree of
 clusters**. Not surprisingly, this clustering technique is well suited
@@ -245,7 +245,7 @@ or type invertebrate.
 
 #### Limitations and Advantages of Hierarchical Clustering Technique
 
-![](img/image6.gif)
+![](img/image8.gif)
 
 **Advantages
 \[[*11*](http://www.displayr.com/strengths-weaknesses-hierarchical-clustering.)\]**
@@ -316,8 +316,7 @@ Method, giving K-Means a better advantage when it comes to reading its
 outputs.
 \[[*13*](http://ijarcet.org/wp-content/uploads/IJARCET-VOL-5-ISSUE-6-1943-1946.pdf.)\]
 
-![](img/image2.png){width="4.417498906386702in"
-height="2.2205610236220474in"}
+![](img/image9.png)
 
 **Affinity Propagation Clustering**
 
@@ -331,8 +330,7 @@ Hierarchical Clustering, Affinity Propagation tends to be very slow.
 When it is used to run on large datasets, it is still difficult to
 understand our data based on the given final clusters.
 
-![](img/image5.png){width="4.402353455818023in"
-height="3.186055336832896in"}\[[*15*](http://hdbscan.readthedocs.io/en/latest/comparing_clustering_algorithms.html.)\]
+![](img/image10.png) [*15*](http://hdbscan.readthedocs.io/en/latest/comparing_clustering_algorithms.html.)\]
 
 **Density-based spatial clustering of applications with noise (DBSCAN)**
 
@@ -345,7 +343,7 @@ well as very large datasets, thus giving this algorithm a higher
 advantage when it comes to analyzing its data in comparison to
 Hierarchical Clustering.
 
-![](img/image1.png)
+![](img/image11.png)
 
 **Mean Shift Clustering**
 
@@ -356,7 +354,7 @@ Mean Shift has more intuitive and meaningful parameters as well as a
 better scalability in principle, giving it a slightly better advantage
 in comparison to that of Hierarchical Clustering.
 
-![](img/image3.gif)
+![](img/image12.gif)
 
 #### Summary
 

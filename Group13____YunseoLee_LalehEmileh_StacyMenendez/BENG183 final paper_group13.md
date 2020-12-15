@@ -118,7 +118,7 @@ method**. It is a distance that is the length of a line between two
 points within a euclidean space. It can be calculated using the
 cartesian coordinates and applying it to the Pythagorean distance
 formula. As a result, this will give us the magnitude of the two points.
-The euclidean distance is calculated as: $d(p,q)\  = \ $ .
+The euclidean distance is calculated as: $ d(p,q) = √((p_1-q〖_1〗)^2+(p_2-q_2 )^2+ ...(p_n-q_n )^2 ) $ .
 \[[*5*](https://en.wikipedia.org/wiki/Euclidean_distance)\]
 
 ![](img/image2.png)
@@ -129,8 +129,7 @@ Manhattan distance, also called the **“taxicab” metric**, is a distance
 measure that is not widely used. This measure utilizes two data points
 that are found in a grid-like path. As a result, the distance is the sum
 of absolute differences. The Manhattan distance is calculated as p~1~ at
-(x~1~, y~1~) and p~2~ as: (x~2~,
-y~2~)$\  = \ |X_{1} - Y_{2}| + \ ... + |X_{1} - Y_{2}|$.
+$ (x1, y1) and p2 as: (x2, y2) = |X_1-Y_2 |+ ...+|X_1-Y_2 |. $.
 \[[*7*](https://www.sciencedirect.com/topics/mathematics/manhattan-distance#:~:text=The%20Manhattan%20distance%20between%20two,the%20%E2%80%9Ctaxi%20cab%E2%80%9D%20metric.)\]
 
 ![](img/image3.png)

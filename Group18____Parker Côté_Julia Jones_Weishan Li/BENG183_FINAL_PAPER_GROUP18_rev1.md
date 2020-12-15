@@ -185,12 +185,18 @@ As you learned in the Suffix Array section, to do any alignment with Suffix Arra
 STAR           
 ```
 
-`--runThreadN` number of threads 
-`--runMode` genomeGenerate mode
-`--genomeDir` /path/to/store/genome_indices
-`--genomeFastaFiles` /DS/reference/Drosophila_melanogaster.BDGP6.22.dna.toplevel.fa 
-`--sjdbGTFfile` /DS/reference/Drosophila_melanogaster.BDGP6.22.97.chr.gtf 
-`--sjdbOverhang` 100 #reads length minus 1 
+`--runThreadN`: number of threads 
+
+`--runMode`: genomeGenerate mode 
+
+`--genomeDir` : /path/to/store/genome_indices
+
+`--genomeFastaFiles` : /path/to/FASTA_file
+
+`--sjdbGTFfile` : /path/to/GTF_file
+
+`--sjdbOverhang` : typically read length minus 1 
+
 
 ---
 ### Sources

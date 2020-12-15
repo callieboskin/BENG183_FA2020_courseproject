@@ -129,7 +129,7 @@ Manhattan distance, also called the **“taxicab” metric**, is a distance
 measure that is not widely used. This measure utilizes two data points
 that are found in a grid-like path. As a result, the distance is the sum
 of absolute differences. The Manhattan distance is calculated as p~1~ at
-\( (x1, y1) and p2 as: (x2, y2) = |X_1-Y_2 |+ ...+|X_1-Y_2 |.  \).
+\( (x1, y1) and p2 as: ![](img/latex/image2.png).
 \[[*7*](https://www.sciencedirect.com/topics/mathematics/manhattan-distance#:~:text=The%20Manhattan%20distance%20between%20two,the%20%E2%80%9Ctaxi%20cab%E2%80%9D%20metric.)\]
 
 ![](img/image3.png)
@@ -168,11 +168,9 @@ methods very different from one another. In **complete-linkage**, we
 merge the two clusters that are the farthest elements in the plot. On
 the other hand, in **single-linkage**, we merge the two clusters that
 are closest elements from the plot. Mathematically, the complete linkage
-function — the distance
-$D(X,Y)\  = \ max_{\text{x\ } \in \ X,\ y\  \in Y}\ d(x,y)$ and single
-linkage function - the distance $D(X,Y)\  = \ min\ d(x,y)$ Where,
-$d(x,y)\ $is the distance between $x \in \ X,\ y\  \in \text{\ Y}$and X
-and Y are two sets of clusters.
+function 
+ ![](img/latex/image3.png) and 
+ ![](img/latex/image4.png)
 \[[*6*](https://en.wikipedia.org/wiki/Complete-linkage_clustering)\]
 
 ![](img/image5.png)
@@ -182,7 +180,7 @@ and Y are two sets of clusters.
 Average-linkage uses the distance between two clusters, as defined as
 the average of distances between all pairs of objects. In the
 average-linkage method, D(x,y) is computed as
-$D(x,y)\  = \ T_{\text{xy}}\ /\ (\ Nx\ *\ Ny)$. Where Txy is the sum of
+ ![](img/latex/image5.png) Where Txy is the sum of
 pairwise distances between cluster x and cluster y. N\_x and N\_y are
 the sizes of the clusters x and y*.* The two clusters, x and y, are then
 merged and formed into new clusters within the average pairwise distance
@@ -196,34 +194,34 @@ and so on.
 In order to understand the efficiency among the agglomerative clustering
 technique, we can compare the time complexities of each linkage method.
 
-The time complexity of **complete-linkage** clustering is O($n^{2}$ log
-n). This algorithm is to compute the $n^{2}$ distance metric and sort
+The time complexity of **complete-linkage** clustering is  ![](img/latex/image6.png).
+This algorithm is to compute the  ![](img/latex/image7.png) distance metric and sort
 the distances for each data point. After each merge iteration, the
 distance metric can be updated in O(n). The process of picking the next
 pair to merge is by finding the smallest distance that is the next
 target for merging. This can be done by traversing the n sorted lists of
-distances, which takes $n^{2}$ traversal steps. This all takes up
-O($n^{2}$ log n).
+distances, which takes![](img/latex/image7.png) traversal steps. This all takes up
+ ![](img/latex/image6.png).
 \[[*9*](https://nlp.stanford.edu/IR-book/completelink.html)\]
 
-The time complexity of **single-linkage** clustering is O($n^{2}$). To
-start off, compute all distances in O($n^{2}$). While doing this, find
+The time complexity of **single-linkage** clustering is  ![](img/latex/image8.png). To
+start off, compute all distances in ![](img/latex/image8.png). While doing this, find
 the smallest distance for each data point and keep them in a
 next-best-merge array and to then find the smallest distance in the
 next-best-merge array in each of the n-1 merging steps. Then merge the
 two clusters, and update the distance matrix in O(n). Finally, we update
 the next-best-merge array in O(n) in each step. Therefore, it takes
-O($n^{2}$).
+![](img/latex/image8.png).
 \[[*9*](https://nlp.stanford.edu/IR-book/completelink.html)\]
 
-The time complexity of **average-linkage** clustering is O($n^{2}$log
-n). First, compute all $n^{2}$ similarities for the single clusters. In
+The time complexity of **average-linkage** clustering is  ![](img/latex/image6.png).
+First, compute all  ![](img/latex/image7.png) similarities for the single clusters. In
 each of O(n) merge iterations, identify the pair of clusters with the
 highest cohesion in O(n), merge the pair, and update cluster centroids,
 and possible mergers of the just created cluster with the remaining
 clusters. For each cluster, we also need to delete the two just merged
 clusters and insert the newly created cluster. This iteration takes O(n
-log n). Therefore, overall time complexity is O($n^{2}$ log n).
+log n). Therefore, overall time complexity is  ![](img/latex/image6.png).
 \[[*9*](https://nlp.stanford.edu/IR-book/completelink.html)\]
 
 As a result, it is seen that they all have very poor time complexities.

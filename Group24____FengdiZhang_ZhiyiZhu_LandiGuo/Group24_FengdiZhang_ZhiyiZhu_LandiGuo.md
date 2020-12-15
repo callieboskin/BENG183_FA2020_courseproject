@@ -186,6 +186,7 @@ There are 9 columns in a GTF file, each column represents a field:
   * 0 = first base
   * 1 = second base
   * 2 = third base
+  
 9. **Attribute**: semicolon-separated, additional information about the feature
 
 #### Command Line
@@ -261,6 +262,7 @@ In a BAM file, each row is one read. There are at least 11 columns in each row t
   * 255 = mapping quality unavailable
 6. **CIGAR string**: tells us if the query read is a perfect match to the reference sequence or not
   * e.g. 100M = the read has 100bp and matches perfectly
+  
 7. **Mate name**: Sequence name of the mate read, “=” means it is identical to this read
 8. **Mate position**: the mapping position of the mate read
 9. **Template length**: the distance from the leftmost to the rightmost mapped base of mate reads
@@ -284,6 +286,7 @@ The *Log.final.out file tells us the mapping statistics about:
 1. Unique reads
 2. Multi-mapping reads
 3. Unmapped reads
+
 A good quality mapping expects a large proportion of reads to be uniquely mapped, and small or no proportion to be multi-location mapped or unmapped.
 
 #### Qualimap

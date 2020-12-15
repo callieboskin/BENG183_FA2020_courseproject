@@ -84,6 +84,7 @@ Finally, use reverse transcription to convert our RNA into cDNA, which then allo
 
 
 <p>&nbsp;</p>
+
 **Overview of MARIO Steps**
 
 <div align="center"><img src="./Group17_images/figure2.png" /></div>

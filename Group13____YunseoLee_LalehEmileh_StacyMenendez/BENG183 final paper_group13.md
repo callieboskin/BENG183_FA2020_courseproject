@@ -197,12 +197,13 @@ The time complexity of **complete-linkage** clustering is O(n2 log n).
 This algorithm is to compute the n2 distance metric and sort the distances for each data point. 
 After each merge iteration, the distance metric can be updated in O(n). 
 The process of picking the next pair to merge is by finding the smallest distance that is the next target for merging.
-This can be done by traversing the n sorted lists of distances, which takes n2 traversal steps. This all takes up O(n2 log n). [9]
+This can be done by traversing the n sorted lists of distances, which takes n2 traversal steps. This all takes up O(n2 log n).
 
 \[[*9*](https://nlp.stanford.edu/IR-book/completelink.html)\]
 
 The time complexity of **single-linkage** clustering is O(n2). To start off, compute all distances in O(n2). 
-While doing this, find the smallest distance for each data point and keep them in a next-best-merge array and to then find the smallest distance in the next-best-merge array in each of the n-1 merging steps. Then merge the two clusters, and update the distance matrix in O(n). Finally, we update the next-best-merge array in O(n) in each step. Therefore, it takes O(n2). [9](https://nlp.stanford.edu/IR-book/completelink.html)\]
+While doing this, find the smallest distance for each data point and keep them in a next-best-merge array and to then find the smallest distance in the next-best-merge array in each of the n-1 merging steps. Then merge the two clusters, and update the distance matrix in O(n). Finally, we update the next-best-merge array in O(n) in each step. Therefore, it takes O(n2).
+\[[*9*](https://nlp.stanford.edu/IR-book/completelink.html)\]
 
 The time complexity of average-linkage clustering is O(n2log n). 
 First, compute all n2 similarities for the single clusters. In each of O(n) merge iterations,

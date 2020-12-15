@@ -28,15 +28,15 @@ A statistical hypothesis is a hypothesis that is testable on the basis of observ
 
 #### Test statistic decision making
 
-When comes down to the decision making procedure, traditionally test statistic is used. If the test statistic locates within the acceptance region, we accept the null hypothesis. Otherwise, we reject the null hypothesis. 
+When it comes down to the decision making procedure, traditionally, a test statistic is used. If the test statistic is located within the acceptance region, we accept the null hypothesis. Otherwise, we reject the null hypothesis. 
 
 #### P-value decision making
 
-Another way that is much more popular today is using p-value to make decisions. The common threshold is 0.05. When the p-value is higher than 0.05, we fail to reject the null hypothesis. When the p-value is lower than 0.05, we claim the result to be statitically significant and reject the null hypothesis. 
+Another way that is much more popular today is using p-value to make decisions. The common threshold is 0.05. When the p-value is higher than 0.05, we fail to reject the null hypothesis. When the p-value is lower than 0.05, we claim the result to be statistically significant and reject the null hypothesis. 
 
 #### Which one should I use?
 
-Mathematically, p-value decision making and test statistic decision making in the hypothesis testing context are the same. Then why is p-value decision making much more prefered nowadays? Is there a specific reason besides the fact that the simulation of p-value is much easier to conduct in this computing advanced era? We hope you will find an answer as we walk you through the rest of this chapter. Let's start by illustrations of test statistic decision making and p-value decision making. 
+Mathematically, p-value decision making and test statistic decision making in the hypothesis testing context are the same. Then why is p-value decision much more preferred nowadays? Is there a specific reason besides the fact that the simulation of p-value is much easier to conduct in this computing-advanced era? We hope you will find an answer as we walk you through the rest of this chapter. Let's start by illustrating test statistic decision making and p-value decision making. 
 
 ## Test Statistic <a name=2></a>
 
@@ -121,7 +121,6 @@ Here is a table of many of the popular statistical tests along with their use ca
         <td>Tests if two related variables are different – ignores magnitude of change, only takes into account
         direction</td>
     </tr>
-    
 </table>
 <sup><a href="https://cyfar.org/types-statistical-tests">Source: cyfar.org</a></sup> <br>
 
@@ -129,14 +128,14 @@ Each of these tests will return a numerical test statistic, which can be used fo
 
 
 ### Decision-making with a test statistic <a name="23"></a>
-A test statistic can be used to decide the outcome of a hypothesis test. This is done by defining an *acceptance region* delimited by *critical values* and evaluating whether the test statistic falls within the boundaries of this region. Essentially, you can create a test statistic threshold for your hypothesis test and determine whether samples are significantly different or not based on whether they are within the threshold or not.
+A test statistic can be used to decide the outcome of a hypothesis test. This is done by defining an *acceptance region* delimited by *critical values* and evaluating whether the test statistic falls within the boundaries of this region. Essentially, you are creating a test statistic threshold for your hypothesis test and determining whether samples are significantly different or not based on whether they are within the threshold.
 
 #### Acceptance region and critical values
 The acceptance region is a range of acceptable test statistic values where the null hypothesis gets accepted. This region can be visualized below on the cumulative distribution function or CDF of the test statistic. The critical value is simply the start and end of the acceptance region. So if the acceptance region were between values x and y, x and y would be the critical values. The critical value is also visualized in the diagram below.
 
-*diagram of acceptance region and critical value on normal distribution without values*
+<img src="acceptance1.png" alt="acceptance region and critical values" width="80%"/> <br>
 
-Traditionally, the critical values can be found using a lookup table based on the desired significance of the test statistic and the number of degrees of freedom of the hypothesis test. 
+Traditionally, the critical values can be found using a lookup table based on the desired significance of the test statistic and the number of degrees of freedom of the hypothesis test. The significance of the test statistic is the amount of certainty we want to have about our result where 1 means 100% certain and 0 means 0% certain.
 
 For example, the table for a t-test is as follows.
 
@@ -192,13 +191,13 @@ Now let's say we found a patient with 150 copies of this protein in each of thei
 
 In this case, our null hypothesis would be that this difference in number of copies is not abnormal and fits in the normal distribution.
 A simple test statistic we can use for this problem can just be the number of copies of the protein since this value quantifies how different a particular person's cells are from a cell under the null hypothesis.
-Since the test statistic we're using is a value that varies randomly from person to person, it is a random variable, where the distribution of such is modeled by its cumulative distribution function or CDF. 
+Since the test statistic we're using is a value that varies randomly from person to person, it is a random variable, where the distribution of such is modeled by its CDF. 
 The CDF is a histogram that shows what percentage of people have a certain count of the protein on the y-axis with the counts on the x-axis.
 
 Now let's try to answer the question of if our patient is abnormal.
 The most intuitive way of thinking about it is if we just set a threshold of acceptable counts. So for this example, we might arbitrarily say that if the patient has between 80 and 120 copies of the protein, then they're normal, and anything outside is not. In other words, the acceptance region is bounded by the critical values of 80 and 120.
 
-<img src="test_stat_ex3.png" alt="normal distribution centered at 100 proteins per cell with patient at 150 proteins" width="80%"/>
+<img src="test_stat_ex3.png" alt="acceptance region and critical values of example" width="80%"/>
 
 Since our patient's cells are not within the acceptance region and has a statistic more extreme than the critical values, we don't accept but reject our null hypothesis.
 
@@ -206,13 +205,13 @@ Since our patient's cells are not within the acceptance region and has a statist
 
 ### What is a P-value <a name="31"></a>
 
-Just like the test statistic, the p-value is a representation of a data point compared to a distribution. In fact, it is only one step further than the test statistic. Using the test statistic and distribution the p-value can be calculated. The p-value is the probability of getting results at least as extreme as the test statistic. In the animation below you can see that the p-value is simply the area under the curve after the test statistic for a one tailed test.
+Just like the test statistic, the p-value is a representation of a data point compared to a distribution. In fact, it is only one step further than the test statistic. Using the test statistic and distribution the p-value can be calculated. The p-value is the probability of getting results at least as extreme as the test statistic. In the animation below, you can see that the p-value is simply the area under the curve after the test statistic for a one tailed test.
 
 <img src="p-val.gif" alt="p-value" width="80%"/>
 
 ### How do you calculate the p-value <a name="32"></a>
 
-P-value is calculated by taking the area under the curve of the values more extreme than your test statistic. When the distribution is a well known one the p-value can be calculated by using the distribution's CDF. When a distribution does not have a known CDF the p-value can be calculated through computational simulation. 
+P-value is calculated by taking the area under the curve of the values more extreme than your test statistic. When the distribution is known, the p-value can be calculated by using the distribution's CDF. When a distribution does not have a known CDF the p-value can be calculated through computational simulation. 
 
 ### Decision-making with a P-value <a name="33"></a>
 
@@ -226,44 +225,44 @@ When making a decision with a p-value, scientists use a threshold (&alpha;). &al
 
 ### Example <a name="34"></a>
 
-Let's use the same example experimentas before but now use p-value to make a decision. Let's set the threshold &alpha; to 0.05.  
+Let's use the same example experiment from before but now use p-value to make the decision. Let's set the threshold &alpha; to 0.05.  
 
-A new patient has 175 units of protein. Using the  distribution from before, we can calculate the area under the curve greater 75 units away from 100 (&geq; 175 or &leq; 25) and obtain a p-value of 0.023. Since p < &alpha;, we can reject the null hypothesis and conclude that the patient has an abnormal amount of protein.  
+A new patient has 175 units of protein. Using the test statistic distribution from before, we can calculate the area under the curve greater than 75 units away from 100 (&geq;175 or &leq;25) and obtain a p-value of 0.023. Since p < &alpha;, we can reject the null hypothesis and conclude that the patient has an abnormal amount of protein.  
 
 ## Comparison <a name="4"></a>
 
-As you see, both test statistic decision making and p-value decision making make their judgements based on an assumed test distribution. While test statistic is a value on the x axis, p value is an area under the unit curve. 
+As you see, both test statistic decision-making and p-value decision-making make their judgements based on an assumed test distribution. While test statistic is a value on the x axis, p value is an area under the unit curve. 
 
-In the situation with just one variable, If you think test statistic as a point moving along the 1D axis, p-value will be like a curtain you can slide along the 2D wall. The extra dimension p-value brings is the distribution. In test statistic decision making, you need to calculate a critical value which is the boundary between the acceptance region and the rejection region. The area under the curve on the rejection region side of the critical value should be your chosen significance level &alpha;. In other words, given the same &alpha;, test statistic distributions of different shapes give different critical values. 
+In the situation with just one variable, if you think of the test statistic as a point moving along the 1D axis, p-value will be like a curtain you can slide along the 2D wall. The extra dimension p-value brings is the distribution. In test statistic decision-making, you need to calculate a critical value, which is the boundary between the acceptance region and the rejection region. The area under the curve on the rejection region side of the critical value should be your chosen significance level &alpha;. In other words, given the same &alpha;, test statistic distributions of different shapes can give different critical values. 
 
 
 ### Example
 
-Now suppose you are given four different test statistic distributions as the following and you know the test statistic to be 10.8 for each of them.  
+Now suppose you are given four different test statistic distributions as follows, and you know the test statistic is 10.8 for each of them.  
 
 ![Test statistic](./test_stats.png)
 
-Can you draw the conclusion that the hypothesis test decisions made in these cases are of the same confidence level because they have the same test statistic? Apprently no. In fact, the decisions in each case might even be opposite. 
+Can you draw the conclusion that the hypothesis test decisions made in these cases are of the same confidence level because they have the same test statistic? Apparently not. In fact, the decisions in each case might even be the opposite. 
 
 ![Test statistic CV](./test_stats_cv.png)
 
-You can see that since the Critical Value (CV) in each case is different, we have case 1 and 3 reject the null hypothesis while case 2 and 4 fail to reject the null hypothesis. But is it possible to compare the confidence level across hypothesis testing cases? The answer is yes. If you calculate the area under the curve with test statistic at least as large as the observed test statistic, you can make the decision by comparing the area with the &alpha; level; you are also able to compare the areas across cases to tell which decision is more confident. Does it remind you anything we covered? Yes, that's exactly what p-value decision making is doing. 
+You can see that since the Critical Value (CV) in each case is different, case 1 and 3 reject the null hypothesis while case 2 and 4 fail to reject the null hypothesis. But is it possible to compare the confidence level across hypothesis testing cases? The answer is yes. If you calculate the area under the curve with test statistic at least as large as the observed test statistic, you can make the decision by comparing the area with the &alpha; level; you are also able to compare the areas across cases to tell which decision is more confident. Does this remind you of anything we covered? Yes, that's exactly what p-value decision making does. 
 
 ![P value](./p_value.png)
 
-For the same examples, once you know the p-values for each test statistic, you are allowed to compare them and tell which decisions you made are more statistically sounding. 
+For these same examples, once you know the p-values for each test statistic, you are allowed to compare them and tell which decisions you made are more statistically sound. 
 
 ### Practicality of P-value
 
 ![P value cartoon](./worship.png)
 
-P-value, a.k.a. the area under the curve with test statistic at least as extreme as the observed test statistic, is essentially a probability. As a number between 0 and 1, the p-value has the unique comparability across all statistical analysis contexts; the comparability that is itself practical enough to replace test statistic decision making. 
+P-value, a.k.a. the area under the curve with a test statistic at least as extreme as the observed test statistic, is essentially a probability. As a number between 0 and 1, the p-value has the unique comparability across all statistical analysis contexts; the comparability that is itself practical enough to replace test statistic decision making. 
 
-This practicality might not seem obvious. Let me present it in a way much easier to understand. 
+This practicality might not seem obvious, so let me present it in a way much easier to understand. 
 
-Before money was invented, people traded one stuff for another. Person A might use two baskets of fresh fruits to trade for a blanket. Person B might use a rabbit he just hunted to trade for a same blanket. Now if a reasonable person C who has no fruits or rabbits wanted to trade for a same blanket, he would first think what he had and might go ask person A and person B for how much amount did they trade their stuff for the blanket. Then he would think how much a blanket worths his assets and finally went to negotiate and trade. But after money was invented, it gave everything a value. Now if the person C still wanted a blanket, he would just check how much money a blanket costs and go buy it. You see that the time he spent on the trading process was much saved because of the comparability money gave to the products. 
+Before money was invented, people traded one thing for another. Person A might use two baskets of fresh fruits to trade for a blanket. Person B might use a rabbit he just hunted to trade for the same blanket. Now if a reasonable person C who has no fruits or rabbits wanted to trade for the same blanket, then he would first think about what he has and might go ask person A and person B for how much they had traded for the blanket. Then, he would think about how much of his assets a blanket is worth, and finally, he would go negotiate and trade. But after money was invented, it gave everything a value. Now if person C still wanted a blanket, then he would just check how much money a blanket costs and buy it. You see that the time he spent on the trading process was saved because of the comparability money gave to the products. 
 
-P-value plays a similar role in the hypothesis testing context. Suppose you are doing a literature review for a certain topic and you find several statistical analysis. It's much easier for you to tell which analysis is more statistically significant by comparing the p-values. It wouldn't be that efficient if you only had the test statistic and distributions. Just like money increases the efficiency of trade, the p-value increases the efficiency of scientific studies, in a way you might not notice before.
+P-value plays a similar role in the hypothesis testing context. Suppose you are doing a literature review for a certain topic, and you find several statistical analyses. It will be much easier for you to tell which analysis is more statistically significant by comparing the p-values. It wouldn't be very efficient if you only had the test statistic and distributions. Just as money increases the efficiency of trade, the p-value increases the efficiency of scientific studies in a way you might not have noticed before.
 
 
 ## Conclusion
@@ -276,3 +275,4 @@ As you can see, decision-makings with a test statistic and with a p-value are ve
 - https://previews.123rf.com/images/blamb/blamb1405/blamb140500061/27976819-a-cartoon-arm-wrestling-match-with-the-thin-man-defeating-the-muscular-man-.jpg
 - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVyDmLqEit4hu4G4uTjRbmtF3DGV9OXyYwUA&usqp=CAU
 - https://cyfar.org/types-statistical-tests
+- https://www.itl.nist.gov/div898/handbook/eda/section3/eda3672.htm
